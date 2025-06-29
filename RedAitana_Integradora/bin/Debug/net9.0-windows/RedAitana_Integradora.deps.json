@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "RedAitana_Integradora/1.0.0": {
+        "runtime": {
+          "RedAitana_Integradora.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RedAitana_Integradora/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
