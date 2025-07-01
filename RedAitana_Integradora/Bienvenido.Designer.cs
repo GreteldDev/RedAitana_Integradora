@@ -30,20 +30,20 @@ namespace RedAitana_Integradora
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            panel3 = new Panel();
+            pictureBox1 = new PictureBox();
+            label5 = new Label();
+            label2 = new Label();
             btnGestionVoluntarios = new Button();
             btnGestionEmpleados = new Button();
-            label2 = new Label();
             btnRegistroGeneral = new Button();
             label3 = new Label();
             panel2 = new Panel();
             label4 = new Label();
-            label5 = new Label();
-            panel3 = new Panel();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -56,8 +56,49 @@ namespace RedAitana_Integradora
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 723);
+            panel1.Size = new Size(250, 444);
             panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(pictureBox1);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(label2);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(250, 95);
+            panel3.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(12, 24);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(65, 48);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(7, 75);
+            label5.Name = "label5";
+            label5.Size = new Size(237, 20);
+            label5.TabIndex = 1;
+            label5.Text = "______________________________________";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(83, 28);
+            label2.Name = "label2";
+            label2.Size = new Size(152, 38);
+            label2.TabIndex = 1;
+            label2.Text = "RedAitana";
+            label2.Click += label2_Click;
             // 
             // btnGestionVoluntarios
             // 
@@ -86,18 +127,6 @@ namespace RedAitana_Integradora
             btnGestionEmpleados.Text = "Gestión Empleados";
             btnGestionEmpleados.UseVisualStyleBackColor = false;
             btnGestionEmpleados.Click += btnGestionEmpleados_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(83, 28);
-            label2.Name = "label2";
-            label2.Size = new Size(152, 38);
-            label2.TabIndex = 1;
-            label2.Text = "RedAitana";
-            label2.Click += label2_Click;
             // 
             // btnRegistroGeneral
             // 
@@ -128,67 +157,42 @@ namespace RedAitana_Integradora
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(250, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(876, 723);
+            panel2.Size = new Size(605, 444);
             panel2.TabIndex = 2;
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(269, 232);
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Purple;
+            label4.Location = new Point(124, 183);
             label4.Name = "label4";
-            label4.Size = new Size(380, 62);
-            label4.TabIndex = 0;
+            label4.Size = new Size(484, 81);
+            label4.TabIndex = 4;
             label4.Text = "BIENVENIDO/A \r\n";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             label4.Click += label4_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(7, 75);
-            label5.Name = "label5";
-            label5.Size = new Size(237, 20);
-            label5.TabIndex = 1;
-            label5.Text = "______________________________________";
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(pictureBox1);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(label2);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(0, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(250, 95);
-            panel3.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(12, 24);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(65, 48);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
             // 
             // Bienvenido
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1126, 723);
+            ClientSize = new Size(855, 444);
             Controls.Add(panel2);
             Controls.Add(label3);
             Controls.Add(panel1);
+            Location = new Point(372, 191);
             Name = "Bienvenido";
             Text = "Form2";
             Load += Bienvenido_Load_1;
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
