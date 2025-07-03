@@ -6,10 +6,6 @@ namespace RedAitana_Integradora
         {
             InitializeComponent();
 
-            this.WindowState = FormWindowState.Maximized; //Maximizar la ventana al iniciar
-            //this.FormBorderStyle = FormBorderStyle.None; //Quitar bordes de la ventana
-            panel1.Anchor = AnchorStyles.None; // Centrar el panel en la ventana
-
             comboBox1.Items.Add("Administrador");
             comboBox1.Items.Add("Usuario");
 

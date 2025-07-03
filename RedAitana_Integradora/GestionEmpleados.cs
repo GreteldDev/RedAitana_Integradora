@@ -15,7 +15,6 @@ namespace RedAitana_Integradora
         public GestionEmpleados()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -37,6 +36,11 @@ namespace RedAitana_Integradora
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

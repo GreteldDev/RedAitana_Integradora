@@ -17,7 +17,6 @@ namespace RedAitana_Integradora
 
             InitializeComponent();
 
-            this.WindowState = FormWindowState.Maximized;
         }
 
 

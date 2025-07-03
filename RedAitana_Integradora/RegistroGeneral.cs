@@ -15,7 +15,6 @@ namespace RedAitana_Integradora
         public RegistroGeneral()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Form3_Load(object sender, EventArgs e)

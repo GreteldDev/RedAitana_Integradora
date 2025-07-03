@@ -31,6 +31,7 @@
             label1 = new Label();
             btnAtras = new Button();
             panel2 = new Panel();
+            panel4 = new Panel();
             panel1 = new Panel();
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
@@ -39,12 +40,11 @@
             btnGestionVoluntarios = new Button();
             btnGestionEmpleados = new Button();
             btnRegistroGeneral = new Button();
-            panel4 = new Panel();
             panel2.SuspendLayout();
+            panel4.SuspendLayout();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -76,6 +76,17 @@
             panel2.Size = new Size(800, 450);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(btnAtras);
+            panel4.Controls.Add(label1);
+            panel4.Dock = DockStyle.Fill;
+            panel4.Location = new Point(250, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(550, 450);
+            panel4.TabIndex = 3;
+            panel4.Paint += panel4_Paint;
             // 
             // panel1
             // 
@@ -169,16 +180,6 @@
             btnRegistroGeneral.Text = "Registro General";
             btnRegistroGeneral.UseVisualStyleBackColor = false;
             // 
-            // panel4
-            // 
-            panel4.Controls.Add(btnAtras);
-            panel4.Controls.Add(label1);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(250, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(550, 450);
-            panel4.TabIndex = 3;
-            // 
             // GestionEmpleados
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -188,12 +189,12 @@
             Name = "GestionEmpleados";
             Text = "GestionEmpleados";
             panel2.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
             ResumeLayout(false);
         }
 

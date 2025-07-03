@@ -12,10 +12,11 @@ namespace RedAitana_Integradora
 {
     public partial class GestionVoluntarios : Form
     {
+        string CadenaConexion = "server = localhost; user id=root; password = duvanvader1; database=aitanabsd";
+
         public GestionVoluntarios()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -29,6 +30,18 @@ namespace RedAitana_Integradora
             Bienvenido bienvenido = new Bienvenido();
             bienvenido.Show();
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var nuevoVoluntario = new NuevoVoluntario(); //Abrir ventana de registro general
+            nuevoVoluntario.Show(); // Mostrar la ventana de registro general
+            this.Hide();
         }
     }
 }

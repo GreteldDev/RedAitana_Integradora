@@ -13,6 +13,9 @@
     <Compile Update="Bienvenido.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="NuevoVoluntario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RegistroGeneral.cs">
       <SubType>Form</SubType>
     </Compile>

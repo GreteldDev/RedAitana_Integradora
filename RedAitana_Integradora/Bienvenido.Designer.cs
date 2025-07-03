@@ -31,18 +31,13 @@ namespace RedAitana_Integradora
         {
             panel1 = new Panel();
             panel3 = new Panel();
-            pictureBox1 = new PictureBox();
-            label5 = new Label();
-            label2 = new Label();
             btnGestionVoluntarios = new Button();
-            btnGestionEmpleados = new Button();
             btnRegistroGeneral = new Button();
+            btnGestionEmpleados = new Button();
             label3 = new Label();
             panel2 = new Panel();
             label4 = new Label();
             panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,8 +45,8 @@ namespace RedAitana_Integradora
             // 
             panel1.BackColor = Color.FromArgb(71, 48, 120);
             panel1.Controls.Add(panel3);
-            panel1.Controls.Add(btnGestionVoluntarios);
             panel1.Controls.Add(btnGestionEmpleados);
+            panel1.Controls.Add(btnGestionVoluntarios);
             panel1.Controls.Add(btnRegistroGeneral);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -61,86 +56,56 @@ namespace RedAitana_Integradora
             // 
             // panel3
             // 
-            panel3.Controls.Add(pictureBox1);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(250, 95);
+            panel3.Size = new Size(250, 108);
             panel3.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(12, 24);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(65, 48);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(7, 75);
-            label5.Name = "label5";
-            label5.Size = new Size(237, 20);
-            label5.TabIndex = 1;
-            label5.Text = "______________________________________";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(83, 28);
-            label2.Name = "label2";
-            label2.Size = new Size(152, 38);
-            label2.TabIndex = 1;
-            label2.Text = "RedAitana";
-            label2.Click += label2_Click;
             // 
             // btnGestionVoluntarios
             // 
-            btnGestionVoluntarios.BackColor = Color.FromArgb(117, 76, 154);
+            btnGestionVoluntarios.BackColor = Color.FromArgb(71, 48, 120);
             btnGestionVoluntarios.FlatAppearance.BorderSize = 0;
+            btnGestionVoluntarios.FlatAppearance.MouseOverBackColor = Color.FromArgb(117, 76, 154);
             btnGestionVoluntarios.FlatStyle = FlatStyle.Flat;
             btnGestionVoluntarios.ForeColor = Color.White;
-            btnGestionVoluntarios.Location = new Point(13, 280);
+            btnGestionVoluntarios.Location = new Point(0, 280);
             btnGestionVoluntarios.Name = "btnGestionVoluntarios";
-            btnGestionVoluntarios.Size = new Size(222, 61);
+            btnGestionVoluntarios.Size = new Size(250, 71);
             btnGestionVoluntarios.TabIndex = 3;
             btnGestionVoluntarios.Text = "Gestión Voluntarios";
             btnGestionVoluntarios.UseVisualStyleBackColor = false;
             btnGestionVoluntarios.Click += btnGestionVoluntarios_Click_1;
             // 
-            // btnGestionEmpleados
-            // 
-            btnGestionEmpleados.BackColor = Color.FromArgb(117, 76, 154);
-            btnGestionEmpleados.FlatAppearance.BorderSize = 0;
-            btnGestionEmpleados.FlatStyle = FlatStyle.Flat;
-            btnGestionEmpleados.ForeColor = Color.White;
-            btnGestionEmpleados.Location = new Point(12, 197);
-            btnGestionEmpleados.Name = "btnGestionEmpleados";
-            btnGestionEmpleados.Size = new Size(223, 61);
-            btnGestionEmpleados.TabIndex = 2;
-            btnGestionEmpleados.Text = "Gestión Empleados";
-            btnGestionEmpleados.UseVisualStyleBackColor = false;
-            btnGestionEmpleados.Click += btnGestionEmpleados_Click;
-            // 
             // btnRegistroGeneral
             // 
-            btnRegistroGeneral.BackColor = Color.FromArgb(117, 76, 154);
+            btnRegistroGeneral.BackColor = Color.FromArgb(71, 48, 120);
             btnRegistroGeneral.FlatAppearance.BorderSize = 0;
+            btnRegistroGeneral.FlatAppearance.MouseOverBackColor = Color.FromArgb(117, 76, 154);
             btnRegistroGeneral.FlatStyle = FlatStyle.Flat;
             btnRegistroGeneral.ForeColor = Color.White;
-            btnRegistroGeneral.Location = new Point(13, 114);
+            btnRegistroGeneral.Location = new Point(0, 114);
             btnRegistroGeneral.Name = "btnRegistroGeneral";
-            btnRegistroGeneral.Size = new Size(223, 61);
+            btnRegistroGeneral.Size = new Size(250, 88);
             btnRegistroGeneral.TabIndex = 0;
             btnRegistroGeneral.Text = "Registro General";
             btnRegistroGeneral.UseVisualStyleBackColor = false;
             btnRegistroGeneral.Click += btnRegistroGeneral_Click;
+            // 
+            // btnGestionEmpleados
+            // 
+            btnGestionEmpleados.BackColor = Color.FromArgb(71, 48, 120);
+            btnGestionEmpleados.FlatAppearance.BorderSize = 0;
+            btnGestionEmpleados.FlatAppearance.MouseOverBackColor = Color.FromArgb(117, 76, 154);
+            btnGestionEmpleados.FlatStyle = FlatStyle.Flat;
+            btnGestionEmpleados.ForeColor = Color.White;
+            btnGestionEmpleados.Location = new Point(0, 185);
+            btnGestionEmpleados.Name = "btnGestionEmpleados";
+            btnGestionEmpleados.Size = new Size(250, 84);
+            btnGestionEmpleados.TabIndex = 2;
+            btnGestionEmpleados.Text = "Gestión Empleados";
+            btnGestionEmpleados.UseVisualStyleBackColor = false;
+            btnGestionEmpleados.Click += btnGestionEmpleados_Click;
             // 
             // label3
             // 
@@ -167,7 +132,7 @@ namespace RedAitana_Integradora
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Purple;
-            label4.Location = new Point(124, 183);
+            label4.Location = new Point(87, 185);
             label4.Name = "label4";
             label4.Size = new Size(484, 81);
             label4.TabIndex = 4;
@@ -188,9 +153,6 @@ namespace RedAitana_Integradora
             Text = "Form2";
             Load += Bienvenido_Load_1;
             panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -209,12 +171,9 @@ namespace RedAitana_Integradora
         private Label label1;
         private Button btnGestionVoluntarios;
         private Button btnGestionEmpleados;
-        private Label label2;
         private Label label3;
         private Panel panel2;
         private Label label4;
         private Panel panel3;
-        private Label label5;
-        private PictureBox pictureBox1;
     }
 }
