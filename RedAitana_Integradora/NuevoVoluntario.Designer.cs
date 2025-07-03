@@ -43,21 +43,19 @@
             btnAtras = new Button();
             label1 = new Label();
             label6 = new Label();
-            label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            txtNombre = new TextBox();
-            txtApellidos = new TextBox();
+            txtPrimerNombre = new TextBox();
+            txtSegundoApellido = new TextBox();
             txtTelefono = new TextBox();
             txtCorreo = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
             btnGuardar = new Button();
             btnCancelar = new Button();
             button1 = new Button();
-            textBox1 = new TextBox();
+            txtSegundoNombre = new TextBox();
             label10 = new Label();
             label11 = new Label();
-            textBox2 = new TextBox();
+            txtPrimerApellido = new TextBox();
             label12 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -204,7 +202,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(386, 114);
+            label1.Location = new Point(386, 148);
             label1.Name = "label1";
             label1.Size = new Size(111, 20);
             label1.TabIndex = 11;
@@ -213,25 +211,16 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(386, 214);
+            label6.Location = new Point(386, 251);
             label6.Name = "label6";
             label6.Size = new Size(129, 20);
             label6.TabIndex = 12;
             label6.Text = "Segundo Apellido";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(386, 256);
-            label7.Name = "label7";
-            label7.Size = new Size(99, 20);
-            label7.TabIndex = 13;
-            label7.Text = "Fecha de Alta";
-            // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(386, 297);
+            label8.Location = new Point(386, 284);
             label8.Name = "label8";
             label8.Size = new Size(67, 20);
             label8.TabIndex = 14;
@@ -240,47 +229,40 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(386, 334);
+            label9.Location = new Point(386, 317);
             label9.Name = "label9";
             label9.Size = new Size(132, 20);
             label9.TabIndex = 15;
             label9.Text = "Correo electronico";
             // 
-            // txtNombre
+            // txtPrimerNombre
             // 
-            txtNombre.Location = new Point(541, 114);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(207, 27);
-            txtNombre.TabIndex = 16;
-            txtNombre.TextChanged += txtNombre_TextChanged;
+            txtPrimerNombre.Location = new Point(541, 148);
+            txtPrimerNombre.Name = "txtPrimerNombre";
+            txtPrimerNombre.Size = new Size(207, 27);
+            txtPrimerNombre.TabIndex = 16;
+            txtPrimerNombre.TextChanged += txtNombre_TextChanged;
             // 
-            // txtApellidos
+            // txtSegundoApellido
             // 
-            txtApellidos.Location = new Point(541, 214);
-            txtApellidos.Name = "txtApellidos";
-            txtApellidos.Size = new Size(207, 27);
-            txtApellidos.TabIndex = 17;
+            txtSegundoApellido.Location = new Point(541, 251);
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Size = new Size(207, 27);
+            txtSegundoApellido.TabIndex = 17;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(541, 294);
+            txtTelefono.Location = new Point(541, 284);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(207, 27);
             txtTelefono.TabIndex = 18;
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(541, 331);
+            txtCorreo.Location = new Point(541, 317);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(207, 27);
             txtCorreo.TabIndex = 19;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(541, 251);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(204, 27);
-            dateTimePicker1.TabIndex = 20;
             // 
             // btnGuardar
             // 
@@ -317,12 +299,12 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
-            // textBox1
+            // txtSegundoNombre
             // 
-            textBox1.Location = new Point(541, 147);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(207, 27);
-            textBox1.TabIndex = 25;
+            txtSegundoNombre.Location = new Point(541, 181);
+            txtSegundoNombre.Name = "txtSegundoNombre";
+            txtSegundoNombre.Size = new Size(207, 27);
+            txtSegundoNombre.TabIndex = 25;
             // 
             // label10
             // 
@@ -335,23 +317,23 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(386, 150);
+            label11.Location = new Point(386, 184);
             label11.Name = "label11";
             label11.Size = new Size(127, 20);
             label11.TabIndex = 26;
             label11.Text = "Segundo Nombre";
             // 
-            // textBox2
+            // txtPrimerApellido
             // 
-            textBox2.Location = new Point(541, 180);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(207, 27);
-            textBox2.TabIndex = 28;
+            txtPrimerApellido.Location = new Point(541, 217);
+            txtPrimerApellido.Name = "txtPrimerApellido";
+            txtPrimerApellido.Size = new Size(207, 27);
+            txtPrimerApellido.TabIndex = 28;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(386, 180);
+            label12.Location = new Point(386, 217);
             label12.Name = "label12";
             label12.Size = new Size(113, 20);
             label12.TabIndex = 27;
@@ -361,23 +343,22 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
+            Controls.Add(txtPrimerApellido);
             Controls.Add(label12);
             Controls.Add(label11);
-            Controls.Add(textBox1);
+            Controls.Add(txtSegundoNombre);
             Controls.Add(label10);
             Controls.Add(button1);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
-            Controls.Add(dateTimePicker1);
             Controls.Add(txtCorreo);
             Controls.Add(txtTelefono);
-            Controls.Add(txtApellidos);
-            Controls.Add(txtNombre);
+            Controls.Add(txtSegundoApellido);
+            Controls.Add(txtPrimerNombre);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label1);
             Controls.Add(btnAtras);
@@ -412,21 +393,19 @@
         private Button btnAtras;
         private Label label1;
         private Label label6;
-        private Label label7;
         private Label label8;
         private Label label9;
-        private TextBox txtNombre;
-        private TextBox txtApellidos;
+        private TextBox txtPrimerNombre;
+        private TextBox txtSegundoApellido;
         private TextBox txtTelefono;
         private TextBox txtCorreo;
-        private DateTimePicker dateTimePicker1;
         private Button btnGuardar;
         private Button btnCancelar;
         private Button button1;
-        private TextBox textBox1;
+        private TextBox txtSegundoNombre;
         private Label label10;
         private Label label11;
-        private TextBox textBox2;
+        private TextBox txtPrimerApellido;
         private Label label12;
     }
 }
