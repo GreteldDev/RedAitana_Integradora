@@ -17,23 +17,6 @@ namespace RedAitana_Integradora
             InitializeComponent();
         }
 
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            // Ocultar el formulario actual
-            this.Hide();
-
-            // Verificar si ya tienes una instancia de Bienvenido abierta
-            //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            // O crear una nueva instancia si no la guardaste
-            Bienvenido bienvenido = new Bienvenido();
-            bienvenido.Show();
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -44,5 +27,13 @@ namespace RedAitana_Integradora
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e) //boton nuevo empleado
+        {
+            var nuevoEmpleado = new NuevoEmpleado(); //Abrir ventana de nuevo empleado
+            nuevoEmpleado.ShowDialog(); // Mostrar la ventana de nuevo empleado
+           
+        }
+        
     }
 }

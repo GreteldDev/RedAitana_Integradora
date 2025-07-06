@@ -1,6 +1,6 @@
 ﻿namespace RedAitana_Integradora
 {
-    partial class NuevoVoluntario
+    partial class NuevoEmpleado
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoVoluntario));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoEmpleado));
             panel1 = new Panel();
             txtPrimerApellido = new TextBox();
             label12 = new Label();
@@ -80,53 +80,53 @@
             // 
             // txtPrimerApellido
             // 
-            txtPrimerApellido.Location = new Point(372, 200);
+            txtPrimerApellido.Location = new Point(353, 203);
             txtPrimerApellido.Name = "txtPrimerApellido";
             txtPrimerApellido.Size = new Size(207, 27);
-            txtPrimerApellido.TabIndex = 47;
+            txtPrimerApellido.TabIndex = 67;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(217, 200);
+            label12.Location = new Point(198, 203);
             label12.Name = "label12";
             label12.Size = new Size(113, 20);
-            label12.TabIndex = 46;
+            label12.TabIndex = 66;
             label12.Text = "Primer Apellido";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(217, 167);
+            label11.Location = new Point(198, 170);
             label11.Name = "label11";
             label11.Size = new Size(127, 20);
-            label11.TabIndex = 45;
+            label11.TabIndex = 65;
             label11.Text = "Segundo Nombre";
             // 
             // txtSegundoNombre
             // 
-            txtSegundoNombre.Location = new Point(372, 164);
+            txtSegundoNombre.Location = new Point(353, 167);
             txtSegundoNombre.Name = "txtSegundoNombre";
             txtSegundoNombre.Size = new Size(207, 27);
-            txtSegundoNombre.TabIndex = 44;
+            txtSegundoNombre.TabIndex = 64;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(217, 130);
+            label10.Location = new Point(198, 133);
             label10.Name = "label10";
             label10.Size = new Size(0, 20);
-            label10.TabIndex = 43;
+            label10.TabIndex = 63;
             // 
             // btnCancelar
             // 
             btnCancelar.BackColor = Color.FromArgb(177, 135, 193);
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(485, 367);
+            btnCancelar.Location = new Point(466, 370);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 41);
-            btnCancelar.TabIndex = 42;
+            btnCancelar.TabIndex = 62;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -135,76 +135,75 @@
             btnGuardar.BackColor = Color.FromArgb(177, 135, 193);
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(372, 367);
+            btnGuardar.Location = new Point(353, 370);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(94, 41);
-            btnGuardar.TabIndex = 41;
+            btnGuardar.TabIndex = 61;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = false;
-            btnGuardar.Click += btnGuardar_Click;
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(372, 300);
+            txtCorreo.Location = new Point(353, 303);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(207, 27);
-            txtCorreo.TabIndex = 40;
+            txtCorreo.TabIndex = 60;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(372, 267);
+            txtTelefono.Location = new Point(353, 270);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(207, 27);
-            txtTelefono.TabIndex = 39;
+            txtTelefono.TabIndex = 59;
             // 
             // txtSegundoApellido
             // 
-            txtSegundoApellido.Location = new Point(372, 234);
+            txtSegundoApellido.Location = new Point(353, 237);
             txtSegundoApellido.Name = "txtSegundoApellido";
             txtSegundoApellido.Size = new Size(207, 27);
-            txtSegundoApellido.TabIndex = 38;
+            txtSegundoApellido.TabIndex = 58;
             // 
             // txtPrimerNombre
             // 
-            txtPrimerNombre.Location = new Point(372, 131);
+            txtPrimerNombre.Location = new Point(353, 134);
             txtPrimerNombre.Name = "txtPrimerNombre";
             txtPrimerNombre.Size = new Size(207, 27);
-            txtPrimerNombre.TabIndex = 37;
+            txtPrimerNombre.TabIndex = 57;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(217, 300);
+            label9.Location = new Point(198, 303);
             label9.Name = "label9";
             label9.Size = new Size(132, 20);
-            label9.TabIndex = 36;
+            label9.TabIndex = 56;
             label9.Text = "Correo electronico";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(217, 267);
+            label8.Location = new Point(198, 270);
             label8.Name = "label8";
             label8.Size = new Size(67, 20);
-            label8.TabIndex = 35;
+            label8.TabIndex = 55;
             label8.Text = "Teléfono";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(217, 234);
+            label6.Location = new Point(198, 237);
             label6.Name = "label6";
             label6.Size = new Size(129, 20);
-            label6.TabIndex = 34;
+            label6.TabIndex = 54;
             label6.Text = "Segundo Apellido";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(217, 131);
+            label1.Location = new Point(198, 134);
             label1.Name = "label1";
             label1.Size = new Size(111, 20);
-            label1.TabIndex = 33;
+            label1.TabIndex = 53;
             label1.Text = "Primer Nombre";
             // 
             // pictureBox2
@@ -214,7 +213,7 @@
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 31;
+            pictureBox2.TabIndex = 51;
             pictureBox2.TabStop = false;
             // 
             // label4
@@ -224,7 +223,7 @@
             label4.Location = new Point(129, 82);
             label4.Name = "label4";
             label4.Size = new Size(543, 20);
-            label4.TabIndex = 29;
+            label4.TabIndex = 49;
             label4.Text = "_________________________________________________________________________________________";
             // 
             // label3
@@ -234,21 +233,20 @@
             label3.ForeColor = Color.Black;
             label3.Location = new Point(152, 35);
             label3.Name = "label3";
-            label3.Size = new Size(249, 38);
-            label3.TabIndex = 30;
-            label3.Text = "Nuevo Voluntario";
+            label3.Size = new Size(241, 38);
+            label3.TabIndex = 50;
+            label3.Text = "Nuevo Empleado";
             // 
-            // NuevoVoluntario
+            // NuevoEmpleado
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            Name = "NuevoVoluntario";
+            Name = "NuevoEmpleado";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "NuevoVoluntario";
-            Load += NuevoVoluntario_Load;
+            Text = "NuevoEmpleado";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

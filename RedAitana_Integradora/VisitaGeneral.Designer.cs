@@ -1,6 +1,6 @@
 ﻿namespace RedAitana_Integradora
 {
-    partial class NuevoVoluntario
+    partial class VisitaGeneral
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoVoluntario));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisitaGeneral));
             panel1 = new Panel();
             txtPrimerApellido = new TextBox();
             label12 = new Label();
@@ -37,12 +37,8 @@
             label10 = new Label();
             btnCancelar = new Button();
             btnGuardar = new Button();
-            txtCorreo = new TextBox();
-            txtTelefono = new TextBox();
             txtSegundoApellido = new TextBox();
             txtPrimerNombre = new TextBox();
-            label9 = new Label();
-            label8 = new Label();
             label6 = new Label();
             label1 = new Label();
             pictureBox2 = new PictureBox();
@@ -61,12 +57,8 @@
             panel1.Controls.Add(label10);
             panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGuardar);
-            panel1.Controls.Add(txtCorreo);
-            panel1.Controls.Add(txtTelefono);
             panel1.Controls.Add(txtSegundoApellido);
             panel1.Controls.Add(txtPrimerNombre);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label8);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox2);
@@ -80,53 +72,53 @@
             // 
             // txtPrimerApellido
             // 
-            txtPrimerApellido.Location = new Point(372, 200);
+            txtPrimerApellido.Location = new Point(418, 259);
             txtPrimerApellido.Name = "txtPrimerApellido";
             txtPrimerApellido.Size = new Size(207, 27);
-            txtPrimerApellido.TabIndex = 47;
+            txtPrimerApellido.TabIndex = 63;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(217, 200);
+            label12.Location = new Point(263, 259);
             label12.Name = "label12";
             label12.Size = new Size(113, 20);
-            label12.TabIndex = 46;
+            label12.TabIndex = 62;
             label12.Text = "Primer Apellido";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(217, 167);
+            label11.Location = new Point(263, 226);
             label11.Name = "label11";
             label11.Size = new Size(127, 20);
-            label11.TabIndex = 45;
+            label11.TabIndex = 61;
             label11.Text = "Segundo Nombre";
             // 
             // txtSegundoNombre
             // 
-            txtSegundoNombre.Location = new Point(372, 164);
+            txtSegundoNombre.Location = new Point(418, 223);
             txtSegundoNombre.Name = "txtSegundoNombre";
             txtSegundoNombre.Size = new Size(207, 27);
-            txtSegundoNombre.TabIndex = 44;
+            txtSegundoNombre.TabIndex = 60;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(217, 130);
+            label10.Location = new Point(263, 189);
             label10.Name = "label10";
             label10.Size = new Size(0, 20);
-            label10.TabIndex = 43;
+            label10.TabIndex = 59;
             // 
             // btnCancelar
             // 
             btnCancelar.BackColor = Color.FromArgb(177, 135, 193);
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(485, 367);
+            btnCancelar.Location = new Point(531, 356);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 41);
-            btnCancelar.TabIndex = 42;
+            btnCancelar.TabIndex = 58;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -135,96 +127,63 @@
             btnGuardar.BackColor = Color.FromArgb(177, 135, 193);
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(372, 367);
+            btnGuardar.Location = new Point(418, 356);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(94, 41);
-            btnGuardar.TabIndex = 41;
+            btnGuardar.TabIndex = 57;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = false;
-            btnGuardar.Click += btnGuardar_Click;
-            // 
-            // txtCorreo
-            // 
-            txtCorreo.Location = new Point(372, 300);
-            txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(207, 27);
-            txtCorreo.TabIndex = 40;
-            // 
-            // txtTelefono
-            // 
-            txtTelefono.Location = new Point(372, 267);
-            txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new Size(207, 27);
-            txtTelefono.TabIndex = 39;
             // 
             // txtSegundoApellido
             // 
-            txtSegundoApellido.Location = new Point(372, 234);
+            txtSegundoApellido.Location = new Point(418, 293);
             txtSegundoApellido.Name = "txtSegundoApellido";
             txtSegundoApellido.Size = new Size(207, 27);
-            txtSegundoApellido.TabIndex = 38;
+            txtSegundoApellido.TabIndex = 56;
             // 
             // txtPrimerNombre
             // 
-            txtPrimerNombre.Location = new Point(372, 131);
+            txtPrimerNombre.Location = new Point(418, 190);
             txtPrimerNombre.Name = "txtPrimerNombre";
             txtPrimerNombre.Size = new Size(207, 27);
-            txtPrimerNombre.TabIndex = 37;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(217, 300);
-            label9.Name = "label9";
-            label9.Size = new Size(132, 20);
-            label9.TabIndex = 36;
-            label9.Text = "Correo electronico";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(217, 267);
-            label8.Name = "label8";
-            label8.Size = new Size(67, 20);
-            label8.TabIndex = 35;
-            label8.Text = "Teléfono";
+            txtPrimerNombre.TabIndex = 55;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(217, 234);
+            label6.Location = new Point(263, 293);
             label6.Name = "label6";
             label6.Size = new Size(129, 20);
-            label6.TabIndex = 34;
+            label6.TabIndex = 54;
             label6.Text = "Segundo Apellido";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(217, 131);
+            label1.Location = new Point(263, 190);
             label1.Name = "label1";
             label1.Size = new Size(111, 20);
-            label1.TabIndex = 33;
+            label1.TabIndex = 53;
             label1.Text = "Primer Nombre";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(555, 19);
+            pictureBox2.Location = new Point(555, 54);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 31;
+            pictureBox2.TabIndex = 51;
             pictureBox2.TabStop = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(129, 82);
+            label4.Location = new Point(129, 117);
             label4.Name = "label4";
             label4.Size = new Size(543, 20);
-            label4.TabIndex = 29;
+            label4.TabIndex = 49;
             label4.Text = "_________________________________________________________________________________________";
             // 
             // label3
@@ -232,23 +191,22 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(152, 35);
+            label3.Location = new Point(152, 70);
             label3.Name = "label3";
-            label3.Size = new Size(249, 38);
-            label3.TabIndex = 30;
-            label3.Text = "Nuevo Voluntario";
+            label3.Size = new Size(365, 38);
+            label3.TabIndex = 50;
+            label3.Text = "Registro de Entrada/Salida";
             // 
-            // NuevoVoluntario
+            // VisitaGeneral
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            Name = "NuevoVoluntario";
+            Name = "VisitaGeneral";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "NuevoVoluntario";
-            Load += NuevoVoluntario_Load;
+            Text = "VisitaGeneral";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -265,12 +223,8 @@
         private Label label10;
         private Button btnCancelar;
         private Button btnGuardar;
-        private TextBox txtCorreo;
-        private TextBox txtTelefono;
         private TextBox txtSegundoApellido;
         private TextBox txtPrimerNombre;
-        private Label label9;
-        private Label label8;
         private Label label6;
         private Label label1;
         private PictureBox pictureBox2;

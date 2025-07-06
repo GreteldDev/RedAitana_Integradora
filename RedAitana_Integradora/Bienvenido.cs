@@ -19,12 +19,20 @@ namespace RedAitana_Integradora
 
         }
 
-
-        //
-
-        private void Bienvenido_Load(object sender, EventArgs e)
+        private void AbrirFormularioEnPanel(Form formHijo)
         {
+            // Limpia cualquier control anterior del panel
+            if (panelContenedor.Controls.Count > 0)
+                panelContenedor.Controls.RemoveAt(0);
 
+            formHijo.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+
+            panelContenedor.Controls.Add(formHijo);
+            panelContenedor.Tag = formHijo;
+
+            formHijo.Show();
         }
 
         private void Bienvenido_Load_1(object sender, EventArgs e)
@@ -32,40 +40,24 @@ namespace RedAitana_Integradora
 
         }
 
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
         private void btnRegistroGeneral_Click(object sender, EventArgs e)
         {
-            var registroGeneral = new RegistroGeneral(); //Abrir ventana de registro general
-            registroGeneral.Show(); // Mostrar la ventana de registro general
-            this.Hide();
+            AbrirFormularioEnPanel(new RegistroGeneral());
         }
 
         private void btnGestionEmpleados_Click(object sender, EventArgs e)
         {
-            var gestionEmpleados = new GestionEmpleados(); //Abrir ventana de gestión de empleados
-            gestionEmpleados.Show(); // Mostrar la ventana de gestión de empleados
-            this.Hide();
-        }
-
-        private void btnGestionVoluntarios_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+            AbrirFormularioEnPanel(new GestionEmpleados());
         }
 
         private void btnGestionVoluntarios_Click_1(object sender, EventArgs e)
         {
-            var gestionVoluntarios = new GestionVoluntarios();
-            gestionVoluntarios.Show();
-            this.Hide();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            AbrirFormularioEnPanel(new GestionVoluntarios());
         }
         // private Label label1;
     }

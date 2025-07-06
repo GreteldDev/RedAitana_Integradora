@@ -35,3 +35,6 @@ C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debu
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.AssemblyReference.cache
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitan.B4B633C9.Up2Date
+C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VisitaPorSeleccion.resources
+C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
+C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VisitaGeneral.resources

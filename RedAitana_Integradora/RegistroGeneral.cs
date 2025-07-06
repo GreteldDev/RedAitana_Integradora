@@ -22,20 +22,19 @@ namespace RedAitana_Integradora
 
         }
 
-        private void btnAtras_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e) //boton visita general
         {
-            // Ocultar el formulario actual
-            this.Hide();
-
-            // Verificar si ya tienes una instancia de Bienvenido abierta
-            //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            // O crear una nueva instancia si no la guardaste
-            Bienvenido bienvenido = new Bienvenido();
-                bienvenido.Show();
-            
-
-            // Opcional: cerrar el formulario actual si no lo necesitas más
-            // this.Close();
+            var visitaManual = new VisitaGeneral(); //Abrir ventana de visita manual
+            visitaManual.ShowDialog(); // Mostrar la ventana de visita manual
+           
         }
+
+        private void button5_Click(object sender, EventArgs e) //boton visita por seleccion
+        {
+            var visitaPorSeleccion = new VisitaPorSeleccion(); //Abrir ventana de visita por seleccion
+            visitaPorSeleccion.ShowDialog(); // Mostrar la ventana de visita por seleccion
+            
+        }
+        
     }
 }

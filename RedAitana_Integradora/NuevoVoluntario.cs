@@ -19,24 +19,22 @@ namespace RedAitana_Integradora
             InitializeComponent();
         }
 
-        private void btnAtras_Click(object sender, EventArgs e)
+        private void NuevoVoluntario_Load(object sender, EventArgs e)
         {
 
-            this.Hide();
-            Bienvenido bienvenido = new Bienvenido();
-            bienvenido.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e) //Boton de guardar datos del voluntario
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             using (MySqlConnection conexion = new MySqlConnection(CadenaConexion))
             {
                 try
                 {
                     conexion.Open();
-                    string query = "INSERT INTO personal (PrimerNombre, SegundoNombre, PrimerApelido, SegundoApellido, correo, telefono) " +
-                        "VALUES (@PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @correo, @telefono)";
+                    string query = "INSERT INTO personal (IdRol, PrimerNombre, SegundoNombre, PrimerApelido, SegundoApellido, correo, telefono) " +
+                        "VALUES (@IdRol, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @correo, @telefono)";
                     MySqlCommand comando = new MySqlCommand(query, conexion);
+                    comando.Parameters.AddWithValue("@IdRol", "1");
                     comando.Parameters.AddWithValue("@PrimerNombre", txtPrimerNombre.Text);
                     comando.Parameters.AddWithValue("@SegundoNombre", txtSegundoNombre.Text);
                     comando.Parameters.AddWithValue("@PrimerApellido", txtPrimerApellido.Text);
@@ -58,30 +56,6 @@ namespace RedAitana_Integradora
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-        }
-       
-
-        private void button1_Click_1(object sender, EventArgs e) //boton para probar la conexion a la base de datos
-        {
-            using (MySqlConnection conexion = new MySqlConnection(CadenaConexion))
-            {
-                try
-                {
-                    conexion.Open();
-                    MessageBox.Show("Conexión exitosa a la base de datos.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-
-                }
-
-            }
-        }
-
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

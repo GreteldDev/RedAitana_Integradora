@@ -19,19 +19,6 @@ namespace RedAitana_Integradora
             InitializeComponent();
         }
 
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            // Ocultar el formulario actual
-            this.Hide();
-
-            // Verificar si ya tienes una instancia de Bienvenido abierta
-            //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            // O crear una nueva instancia si no la guardaste
-            Bienvenido bienvenido = new Bienvenido();
-            bienvenido.Show();
-
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -40,8 +27,12 @@ namespace RedAitana_Integradora
         private void button1_Click(object sender, EventArgs e)
         {
             var nuevoVoluntario = new NuevoVoluntario(); //Abrir ventana de registro general
-            nuevoVoluntario.Show(); // Mostrar la ventana de registro general
-            this.Hide();
+            nuevoVoluntario.ShowDialog(); // Mostrar la ventana de registro general
+        }
+
+        private void GestionVoluntarios_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
