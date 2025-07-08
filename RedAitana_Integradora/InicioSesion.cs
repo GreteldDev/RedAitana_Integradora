@@ -33,7 +33,7 @@ namespace RedAitana_Integradora
             }
             else
             {
-                MessageBox.Show("Credenciales incorrectas", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Esta contraseña ya esta usada por el usuario +Cristian123+", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
         }

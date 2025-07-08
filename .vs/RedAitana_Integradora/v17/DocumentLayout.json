@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\crist\\downloads\\proyecto integrador\\redaitana_integradora\\redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\crist\\downloads\\proyecto integrador\\redaitana_integradora\\redaitana_integradora\\nuevovoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\nuevovoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\crist\\downloads\\proyecto integrador\\redaitana_integradora\\redaitana_integradora\\registrogeneral.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\registrogeneral.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\crist\\downloads\\proyecto integrador\\redaitana_integradora\\redaitana_integradora\\visitageneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\visitageneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\crist\\downloads\\proyecto integrador\\redaitana_integradora\\redaitana_integradora\\registrogeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\registrogeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\redaitana_integradora\\registrogeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\registrogeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\redaitana_integradora\\visitageneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\visitageneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\crist\\downloads\\proyecto integrador\\redaitana_integradora\\redaitana_integradora\\bsd\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\bsd\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConexionMySQL.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\BSD\\ConexionMySQL.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\BSD\\ConexionMySQL.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\BSD\\ConexionMySQL.cs",
+              "RelativeToolTip": "RedAitana_Integradora\\BSD\\ConexionMySQL.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwBwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T15:30:38.218Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VisitaGeneral.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaGeneral.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\VisitaGeneral.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaGeneral.cs",
+              "RelativeToolTip": "RedAitana_Integradora\\VisitaGeneral.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T13:26:40.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VisitaPorSeleccion.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaPorSeleccion.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\VisitaPorSeleccion.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaPorSeleccion.cs",
+              "RelativeToolTip": "RedAitana_Integradora\\VisitaPorSeleccion.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswCsAAABrAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T13:26:30.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistroGeneral.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\RegistroGeneral.Designer.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\RegistroGeneral.Designer.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\RegistroGeneral.Designer.cs",
+              "RelativeToolTip": "RedAitana_Integradora\\RegistroGeneral.Designer.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAcwGUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T13:11:44.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NuevoVoluntario.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\NuevoVoluntario.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\NuevoVoluntario.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\NuevoVoluntario.cs",
+              "RelativeToolTip": "RedAitana_Integradora\\NuevoVoluntario.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwB8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T15:31:03.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistroGeneral.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\RegistroGeneral.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\RegistroGeneral.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\RegistroGeneral.cs",
+              "RelativeToolTip": "RedAitana_Integradora\\RegistroGeneral.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIAxwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T14:39:45.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VisitaPorSeleccion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaPorSeleccion.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\VisitaPorSeleccion.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaPorSeleccion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RedAitana_Integradora\\VisitaPorSeleccion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:44:28.813Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VisitaGeneral.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaGeneral.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\VisitaGeneral.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaGeneral.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RedAitana_Integradora\\VisitaGeneral.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:44:27.446Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegistroGeneral.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\RegistroGeneral.cs",
+              "RelativeDocumentMoniker": "RedAitana_Integradora\\RegistroGeneral.cs",
+              "ToolTip": "C:\\Users\\crist\\Downloads\\proyecto integrador\\RedAitana_Integradora\\RedAitana_Integradora\\RegistroGeneral.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RedAitana_Integradora\\RegistroGeneral.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:44:23.853Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -49,5 +49,10 @@ namespace RedAitana_Integradora
             registroGeneral.Show(); // Mostrar la ventana de registro general
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -44,9 +44,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(12, 22);
+            label1.Location = new Point(15, 28);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(268, 38);
+            label1.Size = new Size(321, 45);
             label1.TabIndex = 4;
             label1.Text = "Registros Recientes";
             // 
@@ -56,9 +57,10 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.ForeColor = Color.White;
-            button4.Location = new Point(23, 126);
+            button4.Location = new Point(29, 158);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
-            button4.Size = new Size(115, 36);
+            button4.Size = new Size(144, 45);
             button4.TabIndex = 4;
             button4.Text = "Visita General";
             button4.UseVisualStyleBackColor = false;
@@ -70,9 +72,10 @@
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.ForeColor = Color.White;
-            button5.Location = new Point(165, 126);
+            button5.Location = new Point(206, 158);
+            button5.Margin = new Padding(4);
             button5.Name = "button5";
-            button5.Size = new Size(217, 36);
+            button5.Size = new Size(271, 45);
             button5.TabIndex = 5;
             button5.Text = "Visita por selección";
             button5.UseVisualStyleBackColor = false;
@@ -80,36 +83,41 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(17, 82);
+            textBox1.Location = new Point(21, 102);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(562, 27);
+            textBox1.Size = new Size(702, 31);
             textBox1.TabIndex = 6;
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(23, 190);
+            dataGridView1.Location = new Point(29, 238);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(569, 233);
+            dataGridView1.Size = new Size(711, 291);
             dataGridView1.TabIndex = 7;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(492, 9);
+            pictureBox1.Location = new Point(615, 11);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(84, 59);
+            pictureBox1.Size = new Size(105, 74);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
             // RegistroGeneral
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
             Controls.Add(textBox1);
@@ -117,6 +125,7 @@
             Controls.Add(button4);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "RegistroGeneral";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";

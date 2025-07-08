@@ -23,5 +23,10 @@ namespace RedAitana_Integradora
             gestionEmpleados.Show(); // Mostrar la ventana de gestión de empleados
             this.Hide();
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

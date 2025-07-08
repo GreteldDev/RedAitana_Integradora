@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisitaGeneral));
             panel1 = new Panel();
             txtPrimerApellido = new TextBox();
             label12 = new Label();
@@ -66,48 +65,55 @@
             panel1.Controls.Add(label3);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 450);
+            panel1.Size = new Size(1000, 562);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // txtPrimerApellido
             // 
-            txtPrimerApellido.Location = new Point(418, 259);
+            txtPrimerApellido.Location = new Point(522, 324);
+            txtPrimerApellido.Margin = new Padding(4, 4, 4, 4);
             txtPrimerApellido.Name = "txtPrimerApellido";
-            txtPrimerApellido.Size = new Size(207, 27);
+            txtPrimerApellido.Size = new Size(258, 31);
             txtPrimerApellido.TabIndex = 63;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(263, 259);
+            label12.Location = new Point(329, 324);
+            label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
-            label12.Size = new Size(113, 20);
+            label12.Size = new Size(134, 25);
             label12.TabIndex = 62;
             label12.Text = "Primer Apellido";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(263, 226);
+            label11.Location = new Point(329, 282);
+            label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(127, 20);
+            label11.Size = new Size(155, 25);
             label11.TabIndex = 61;
             label11.Text = "Segundo Nombre";
             // 
             // txtSegundoNombre
             // 
-            txtSegundoNombre.Location = new Point(418, 223);
+            txtSegundoNombre.Location = new Point(522, 279);
+            txtSegundoNombre.Margin = new Padding(4, 4, 4, 4);
             txtSegundoNombre.Name = "txtSegundoNombre";
-            txtSegundoNombre.Size = new Size(207, 27);
+            txtSegundoNombre.Size = new Size(258, 31);
             txtSegundoNombre.TabIndex = 60;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(263, 189);
+            label10.Location = new Point(329, 236);
+            label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
-            label10.Size = new Size(0, 20);
+            label10.Size = new Size(0, 25);
             label10.TabIndex = 59;
             // 
             // btnCancelar
@@ -115,9 +121,10 @@
             btnCancelar.BackColor = Color.FromArgb(177, 135, 193);
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(531, 356);
+            btnCancelar.Location = new Point(664, 445);
+            btnCancelar.Margin = new Padding(4, 4, 4, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(94, 41);
+            btnCancelar.Size = new Size(118, 51);
             btnCancelar.TabIndex = 58;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -127,51 +134,56 @@
             btnGuardar.BackColor = Color.FromArgb(177, 135, 193);
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(418, 356);
+            btnGuardar.Location = new Point(522, 445);
+            btnGuardar.Margin = new Padding(4, 4, 4, 4);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(94, 41);
+            btnGuardar.Size = new Size(118, 51);
             btnGuardar.TabIndex = 57;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = false;
             // 
             // txtSegundoApellido
             // 
-            txtSegundoApellido.Location = new Point(418, 293);
+            txtSegundoApellido.Location = new Point(522, 366);
+            txtSegundoApellido.Margin = new Padding(4, 4, 4, 4);
             txtSegundoApellido.Name = "txtSegundoApellido";
-            txtSegundoApellido.Size = new Size(207, 27);
+            txtSegundoApellido.Size = new Size(258, 31);
             txtSegundoApellido.TabIndex = 56;
             // 
             // txtPrimerNombre
             // 
-            txtPrimerNombre.Location = new Point(418, 190);
+            txtPrimerNombre.Location = new Point(522, 238);
+            txtPrimerNombre.Margin = new Padding(4, 4, 4, 4);
             txtPrimerNombre.Name = "txtPrimerNombre";
-            txtPrimerNombre.Size = new Size(207, 27);
+            txtPrimerNombre.Size = new Size(258, 31);
             txtPrimerNombre.TabIndex = 55;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(263, 293);
+            label6.Location = new Point(329, 366);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(129, 20);
+            label6.Size = new Size(155, 25);
             label6.TabIndex = 54;
             label6.Text = "Segundo Apellido";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(263, 190);
+            label1.Location = new Point(329, 238);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(111, 20);
+            label1.Size = new Size(134, 25);
             label1.TabIndex = 53;
             label1.Text = "Primer Nombre";
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(555, 54);
+            pictureBox2.Location = new Point(694, 68);
+            pictureBox2.Margin = new Padding(4, 4, 4, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(112, 74);
+            pictureBox2.Size = new Size(140, 92);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 51;
             pictureBox2.TabStop = false;
@@ -180,9 +192,10 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(129, 117);
+            label4.Location = new Point(161, 146);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(543, 20);
+            label4.Size = new Size(635, 25);
             label4.TabIndex = 49;
             label4.Text = "_________________________________________________________________________________________";
             // 
@@ -191,19 +204,21 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(152, 70);
+            label3.Location = new Point(190, 88);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(365, 38);
+            label3.Size = new Size(433, 45);
             label3.TabIndex = 50;
             label3.Text = "Registro de Entrada/Salida";
             // 
             // VisitaGeneral
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(panel1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "VisitaGeneral";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VisitaGeneral";

@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient; // Asegúrate de tener la referencia nugget a MySql.Data
+using MySql.Data.MySqlClient;
+using RedAitana_Integradora.BSD; // Asegúrate de tener la referencia nugget a MySql.Data
 
 namespace RedAitana_Integradora
 {
     public partial class NuevoVoluntario : Form
     {
-        string CadenaConexion = "server = localhost; user id=root; password = duvanvader1; database=aitanabsd"; // Cadena de conexión a la base de datos MySQL
+        string CadenaConexion = "server = localhost; user id=root; password = root; database=aitanabsd"; // Cadena de conexión a la base de datos MySQL
         public NuevoVoluntario()
         {
             InitializeComponent();
@@ -56,6 +57,11 @@ namespace RedAitana_Integradora
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+
+        private void txtPrimerApellido_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
