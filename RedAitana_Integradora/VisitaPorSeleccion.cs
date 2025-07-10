@@ -42,7 +42,7 @@ namespace RedAitana_Integradora
             {
                 conexion.AbrirConexion(); //abre la conexión a la base de datos
                 string query = @"SELECT IdPersonal AS id, Tipo AS Rol, PrimerNombre, SegundoNombre,PrimerApellido,SegundoApellido FROM personal INNER JOIN rol ON personal.IdRol = rol.Id UNION SELECT IdPersonalExtra AS id, Tipo AS Rol, PrimerNombre, SegundoNombre,PrimerApellido,SegundoApellido FROM personalextra INNER JOIN rol ON personalextra.IdRol = rol.Id;"; //consulta para obtener los datos de la tabla personal y personalextra
-                MySqlCommand Puente = new MySqlCommand(query, conexion.conexion); //crea un uente entre las instrucciones que quieres dar(query) y la base de datos(conexion.conexion)
+                MySqlCommand Puente = new MySqlCommand(query, conexion.conexion); //crea un puente entre las instrucciones que quieres dar(query) y la base de datos(conexion.conexion)
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(Puente); //crea un adaptador para ejecutar la consulta y llenar el DataGridView
                 DataTable tabla = new DataTable(); //crea una tabla para almacenar (en memoria, no en la base de datos)los datos obtenidos de la consulta
                 adaptador.Fill(tabla); //llena la tabla con los datos obtenidos de la consulta

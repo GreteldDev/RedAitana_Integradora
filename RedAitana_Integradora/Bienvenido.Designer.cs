@@ -97,7 +97,7 @@ namespace RedAitana_Integradora
             btnGestionVoluntarios.Name = "btnGestionVoluntarios";
             btnGestionVoluntarios.Size = new Size(222, 61);
             btnGestionVoluntarios.TabIndex = 3;
-            btnGestionVoluntarios.Text = "Gestión Voluntarios";
+            btnGestionVoluntarios.Text = "Gestión de Empleados y Voluntarios";
             btnGestionVoluntarios.UseVisualStyleBackColor = false;
             btnGestionVoluntarios.Click += btnGestionVoluntarios_Click_1;
             // 
@@ -112,7 +112,7 @@ namespace RedAitana_Integradora
             btnGestionEmpleados.Name = "btnGestionEmpleados";
             btnGestionEmpleados.Size = new Size(223, 61);
             btnGestionEmpleados.TabIndex = 2;
-            btnGestionEmpleados.Text = "Gestión Empleados";
+            btnGestionEmpleados.Text = "Gestión de Visitantes y Empleados";
             btnGestionEmpleados.UseVisualStyleBackColor = false;
             btnGestionEmpleados.Click += btnGestionEmpleados_Click;
             // 
@@ -150,7 +150,7 @@ namespace RedAitana_Integradora
             Location = new Point(372, 191);
             Name = "Bienvenido";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
+            Text = "RedAitana - Menú";
             Load += Bienvenido_Load_1;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);

@@ -79,3 +79,4 @@ C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Int
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\ref\RedAitana_Integradora.dll
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources
+C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources

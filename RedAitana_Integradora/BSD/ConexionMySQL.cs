@@ -41,7 +41,10 @@ namespace RedAitana_Integradora.BSD
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
+        public MySqlConnection ObtenerConexion() // Método para obtener la conexión actual
+        {
+            return conexion; 
+        }
 
     }
 }
