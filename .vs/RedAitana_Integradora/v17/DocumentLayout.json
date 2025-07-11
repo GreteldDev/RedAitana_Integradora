@@ -11,19 +11,19 @@
       "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\gestionvoluntarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\duvan\\source\\repos\\redaitana_integradora\\redaitana_integradora\\nuevovoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\nuevovoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\visitaporseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\redaitana_integradora\\nuevovoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\nuevovoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|c:\\users\\duvan\\source\\repos\\redaitana_integradora\\redaitana_integradora\\bsd\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\redaitana_integradora\\bsd\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CF4A7327-697D-42EB-8894-FADBC630AECA}|RedAitana_Integradora\\RedAitana_Integradora.csproj|solutionrelative:redaitana_integradora\\bsd\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -98,13 +98,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "NuevoVoluntario.cs",
               "DocumentMoniker": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\NuevoVoluntario.cs",
               "RelativeDocumentMoniker": "RedAitana_Integradora\\NuevoVoluntario.cs",
               "ToolTip": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\NuevoVoluntario.cs",
               "RelativeToolTip": "RedAitana_Integradora\\NuevoVoluntario.cs",
-              "ViewState": "AgIAAEkAAACAMzMzMzMiwBAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwEgAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T23:40:53.078Z",
               "EditorCaption": ""
@@ -129,22 +129,21 @@
               "RelativeDocumentMoniker": "RedAitana_Integradora\\GestionVoluntarios.cs",
               "ToolTip": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\GestionVoluntarios.cs",
               "RelativeToolTip": "RedAitana_Integradora\\GestionVoluntarios.cs",
-              "ViewState": "AgIAAAUAAACAMzMzMzMbwBgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T02:29:08.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "VisitaPorSeleccion.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaPorSeleccion.cs",
               "RelativeDocumentMoniker": "RedAitana_Integradora\\VisitaPorSeleccion.cs",
               "ToolTip": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\VisitaPorSeleccion.cs [Dise\u00F1o]",
               "RelativeToolTip": "RedAitana_Integradora\\VisitaPorSeleccion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T23:32:52.679Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-06T23:32:52.679Z"
             },
             {
               "$type": "Document",
@@ -155,8 +154,7 @@
               "ToolTip": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\NuevoVoluntario.cs [Dise\u00F1o]",
               "RelativeToolTip": "RedAitana_Integradora\\NuevoVoluntario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T23:40:48.501Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-06T23:40:48.501Z"
             },
             {
               "$type": "Document",
@@ -167,8 +165,7 @@
               "ToolTip": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\BSD\\ConexionMySQL.cs [Dise\u00F1o]",
               "RelativeToolTip": "RedAitana_Integradora\\BSD\\ConexionMySQL.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T16:36:29.272Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-10T16:36:29.272Z"
             },
             {
               "$type": "Document",
@@ -179,8 +176,7 @@
               "ToolTip": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\BSD\\ConexionMySQL.resx",
               "RelativeToolTip": "RedAitana_Integradora\\BSD\\ConexionMySQL.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-07-10T16:36:04.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T16:36:04.184Z"
             },
             {
               "$type": "Document",
@@ -192,8 +188,7 @@
               "RelativeToolTip": "RedAitana_Integradora\\BSD\\ConexionMySQL.cs",
               "ViewState": "AgIAAAkAAAComZmZmZk+wC0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T02:06:53.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T02:06:53.461Z"
             },
             {
               "$type": "Document",
@@ -216,8 +211,7 @@
               "RelativeToolTip": "RedAitana_Integradora\\VisitaPorSeleccion.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAA1wCgAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T01:36:10.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T01:36:10.117Z"
             },
             {
               "$type": "Document",

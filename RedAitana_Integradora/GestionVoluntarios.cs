@@ -14,7 +14,6 @@ namespace RedAitana_Integradora
 {
     public partial class GestionVoluntarios : Form
     {
-        string CadenaConexion = "server = localhost; user id=root; password = duvanvader1; database=aitanabsd";
 
         public GestionVoluntarios()
         {

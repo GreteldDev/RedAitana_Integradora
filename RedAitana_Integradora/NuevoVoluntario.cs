@@ -12,36 +12,67 @@ using RedAitana_Integradora.BSD; // Asegúrate de tener la referencia nugget a M
 
 namespace RedAitana_Integradora
 {
+   
     public partial class NuevoVoluntario : Form
     {
         public NuevoVoluntario()
         {
             InitializeComponent();
         }
+    
+        private void NuevoVoluntario_Load(object sender, EventArgs e) 
+        {   // Cargar los roles en el ComboBox
+            List<OpcionRol> roles = new List<OpcionRol>
+{
+            new OpcionRol { Id = 1, Nombre = "Voluntario" },
+            new OpcionRol { Id = 2, Nombre = "Empleado" }
+};
 
-        private void NuevoVoluntario_Load(object sender, EventArgs e)
-        {
+            comboBox1.DataSource = roles;
+            comboBox1.DisplayMember = "Nombre"; // Muestra "Voluntario" y "Empleado"
+            comboBox1.ValueMember = "Id";       // Internamente guarda el 1 o 2
+            comboBox1.SelectedIndex = -1;       // Opcional: que no haya nada seleccionado al inicio
+
 
         }
+        public class OpcionRol
+        {
+            public int Id { get; set; }
+            public string Nombre { get; set; }
+
+            public override string ToString()
+            {
+                return Nombre; // Lo que se muestra en el ComboBox
+            }
+        }
+
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellidos.Text) ||
+                string.IsNullOrWhiteSpace(txtCorreo.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text) ||
+                comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por favor, complete todos los campos.");
+                return;
+            }
+
             using (ConexionMySQL conexion = new ConexionMySQL())
             {
-                try
-                {
                     conexion.AbrirConexion();
                     string query = "INSERT INTO personal (IdRol, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, correo, telefono) " +
                         "VALUES (@IdRol, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @correo, @telefono)";
                     MySqlCommand comando = new MySqlCommand(query, conexion.ObtenerConexion()); // Obtener la conexión desde la clase ConexionMySQL
-                    comando.Parameters.AddWithValue("@IdRol", "1"); // Asignar el ID del rol de voluntario en este caso 1
-                    //cambiar el rol por una selección de rol en el futuro
+                
+                int idRolSeleccionado = ((OpcionRol)comboBox1.SelectedItem).Id;
+                comando.Parameters.AddWithValue("@IdRol", idRolSeleccionado); // Asegúrate de que idRolSeleccionado esté definido y tenga el valor correcto
+                                                                              // Dividir el nombre completo en primer y segundo nombre
 
 
-                    string nombreCompleto = txtNombre.Text.Trim();
-                    string[] partes = nombreCompleto.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                    string nombreCompleto = txtNombre.Text.Trim(); 
+                    string[] partes = nombreCompleto.Split(' ', StringSplitOptions.RemoveEmptyEntries); // Divide el nombre completo en partes, eliminando espacios en blanco
 
-                    string primerNombre = partes.Length > 0 ? partes[0] : "";
+                string primerNombre = partes.Length > 0 ? partes[0] : "";
                     string segundoNombre = partes.Length > 1 ? string.Join(" ", partes.Skip(1)) : "";
 
                     comando.Parameters.AddWithValue("@PrimerNombre", primerNombre);
@@ -59,37 +90,25 @@ namespace RedAitana_Integradora
 
                     comando.Parameters.AddWithValue("@telefono", txtTelefono.Text);
                     comando.Parameters.AddWithValue("@correo", txtCorreo.Text);
-                    int filasAfectadas = comando.ExecuteNonQuery();
+                    int filasAfectadas = comando.ExecuteNonQuery(); //
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Voluntario registrado exitosamente.");
+                        MessageBox.Show("Registro exitoso.");
                     }
                     else
                     {
-                        MessageBox.Show("Error al registrar el voluntario.");
+                        MessageBox.Show("Error al registrar.");
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
+               
             }
         }
 
         private void txtPrimerApellido_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        { }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        //ComnoboBox para seleccionar el rol entre empleado y voluntario
-        {
-            using (ConexionMySQL conexion = new ConexionMySQL())
-            {
-                conexion.AbrirConexion();
-
-            }
-        }
+        { }
+         
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
