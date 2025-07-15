@@ -30,10 +30,10 @@
         {
             panel1 = new Panel();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            btnRegistroSalida = new Button();
+            txtBuscar = new TextBox();
             label10 = new Label();
-            btnGuardar = new Button();
+            btnRegistroEntrada = new Button();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
@@ -45,10 +45,10 @@
             // panel1
             // 
             panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(btnRegistroSalida);
+            panel1.Controls.Add(txtBuscar);
             panel1.Controls.Add(label10);
-            panel1.Controls.Add(btnGuardar);
+            panel1.Controls.Add(btnRegistroEntrada);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
@@ -63,35 +63,37 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(190, 264);
+            dataGridView1.Location = new Point(190, 238);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(616, 174);
+            dataGridView1.Size = new Size(616, 200);
             dataGridView1.TabIndex = 71;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // button1
+            // btnRegistroSalida
             // 
-            button1.BackColor = Color.FromArgb(177, 135, 193);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(626, 469);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(180, 72);
-            button1.TabIndex = 70;
-            button1.Text = "Registrar Salida";
-            button1.UseVisualStyleBackColor = false;
+            btnRegistroSalida.BackColor = Color.FromArgb(177, 135, 193);
+            btnRegistroSalida.FlatStyle = FlatStyle.Flat;
+            btnRegistroSalida.ForeColor = Color.White;
+            btnRegistroSalida.Location = new Point(626, 469);
+            btnRegistroSalida.Margin = new Padding(4);
+            btnRegistroSalida.Name = "btnRegistroSalida";
+            btnRegistroSalida.Size = new Size(180, 72);
+            btnRegistroSalida.TabIndex = 70;
+            btnRegistroSalida.Text = "Registrar Salida";
+            btnRegistroSalida.UseVisualStyleBackColor = false;
+            btnRegistroSalida.Click += btnRegistroSalida_Click;
             // 
-            // textBox1
+            // txtBuscar
             // 
-            textBox1.Location = new Point(190, 149);
-            textBox1.Margin = new Padding(4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(615, 31);
-            textBox1.TabIndex = 69;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtBuscar.Location = new Point(190, 184);
+            txtBuscar.Margin = new Padding(4);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = "Buscar...";
+            txtBuscar.Size = new Size(616, 31);
+            txtBuscar.TabIndex = 69;
+            txtBuscar.TextChanged += textBox1_TextChanged;
             // 
             // label10
             // 
@@ -102,18 +104,19 @@
             label10.Size = new Size(0, 25);
             label10.TabIndex = 68;
             // 
-            // btnGuardar
+            // btnRegistroEntrada
             // 
-            btnGuardar.BackColor = Color.FromArgb(177, 135, 193);
-            btnGuardar.FlatStyle = FlatStyle.Flat;
-            btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(428, 469);
-            btnGuardar.Margin = new Padding(4);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(180, 72);
-            btnGuardar.TabIndex = 67;
-            btnGuardar.Text = "Registrar Entrada";
-            btnGuardar.UseVisualStyleBackColor = false;
+            btnRegistroEntrada.BackColor = Color.FromArgb(177, 135, 193);
+            btnRegistroEntrada.FlatStyle = FlatStyle.Flat;
+            btnRegistroEntrada.ForeColor = Color.White;
+            btnRegistroEntrada.Location = new Point(428, 469);
+            btnRegistroEntrada.Margin = new Padding(4);
+            btnRegistroEntrada.Name = "btnRegistroEntrada";
+            btnRegistroEntrada.Size = new Size(180, 72);
+            btnRegistroEntrada.TabIndex = 67;
+            btnRegistroEntrada.Text = "Registrar Entrada";
+            btnRegistroEntrada.UseVisualStyleBackColor = false;
+            btnRegistroEntrada.Click += btnRegistroEntrada_Click;
             // 
             // pictureBox2
             // 
@@ -170,10 +173,10 @@
 
         private Panel panel1;
         private DataGridView dataGridView1;
-        private Button button1;
-        private TextBox textBox1;
+        private Button btnRegistroSalida;
+        private TextBox txtBuscar;
         private Label label10;
-        private Button btnGuardar;
+        private Button btnRegistroEntrada;
         private PictureBox pictureBox2;
         private Label label4;
         private Label label3;

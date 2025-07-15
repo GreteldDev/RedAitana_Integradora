@@ -48,8 +48,9 @@
             panel2.Controls.Add(panel4);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(4, 4, 4, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 450);
+            panel2.Size = new Size(1000, 562);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
             // 
@@ -64,28 +65,32 @@
             panel4.Controls.Add(label3);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(0, 0);
+            panel4.Margin = new Padding(4, 4, 4, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(800, 450);
+            panel4.Size = new Size(1000, 562);
             panel4.TabIndex = 3;
             panel4.Paint += panel4_Paint;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 220);
+            dataGridView1.Location = new Point(36, 275);
+            dataGridView1.Margin = new Padding(4, 4, 4, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(504, 213);
+            dataGridView1.Size = new Size(630, 266);
             dataGridView1.TabIndex = 16;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
             button1.BackColor = Color.FromArgb(177, 135, 193);
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(29, 153);
+            button1.Location = new Point(36, 191);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(164, 41);
+            button1.Size = new Size(205, 51);
             button1.TabIndex = 15;
             button1.Text = "+ Nuevo Empleado";
             button1.UseVisualStyleBackColor = false;
@@ -93,17 +98,19 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(27, 120);
+            textBox1.Location = new Point(34, 150);
+            textBox1.Margin = new Padding(4, 4, 4, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(493, 27);
+            textBox1.Size = new Size(615, 31);
             textBox1.TabIndex = 14;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(430, 18);
+            pictureBox2.Location = new Point(538, 22);
+            pictureBox2.Margin = new Padding(4, 4, 4, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(112, 74);
+            pictureBox2.Size = new Size(140, 92);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
@@ -112,9 +119,10 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(4, 81);
+            label4.Location = new Point(5, 101);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(543, 20);
+            label4.Size = new Size(635, 25);
             label4.TabIndex = 11;
             label4.Text = "_________________________________________________________________________________________";
             // 
@@ -123,18 +131,20 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(27, 34);
+            label3.Location = new Point(34, 42);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(324, 38);
+            label3.Size = new Size(383, 45);
             label3.TabIndex = 12;
             label3.Text = "Catálogo de Empleados";
             // 
             // GestionEmpleados
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(panel2);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "GestionEmpleados";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "GestionEmpleados";

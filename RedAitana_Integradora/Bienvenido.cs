@@ -42,7 +42,7 @@ namespace RedAitana_Integradora
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnRegistroGeneral_Click(object sender, EventArgs e)
@@ -58,6 +58,11 @@ namespace RedAitana_Integradora
         private void btnGestionVoluntarios_Click_1(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new GestionVoluntarios());
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
         // private Label label1;
     }
