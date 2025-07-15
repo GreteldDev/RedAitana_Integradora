@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroGeneral));
             label1 = new Label();
-            button4 = new Button();
             button5 = new Button();
-            textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
+            btnEditar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -51,28 +50,13 @@
             label1.TabIndex = 4;
             label1.Text = "Registros Recientes";
             // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(177, 135, 193);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(29, 158);
-            button4.Margin = new Padding(4);
-            button4.Name = "button4";
-            button4.Size = new Size(144, 45);
-            button4.TabIndex = 4;
-            button4.Text = "Visita General";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
-            // 
             // button5
             // 
             button5.BackColor = Color.FromArgb(177, 135, 193);
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.ForeColor = Color.White;
-            button5.Location = new Point(206, 158);
+            button5.Location = new Point(29, 168);
             button5.Margin = new Padding(4);
             button5.Name = "button5";
             button5.Size = new Size(271, 45);
@@ -80,14 +64,6 @@
             button5.Text = "Visita por selección";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(21, 102);
-            textBox1.Margin = new Padding(4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(702, 31);
-            textBox1.TabIndex = 6;
             // 
             // dataGridView1
             // 
@@ -112,17 +88,26 @@
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
+            // btnEditar
+            // 
+            btnEditar.Location = new Point(329, 168);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(132, 45);
+            btnEditar.TabIndex = 11;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
+            // 
             // RegistroGeneral
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1000, 562);
+            Controls.Add(btnEditar);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
-            Controls.Add(textBox1);
             Controls.Add(button5);
-            Controls.Add(button4);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
@@ -138,10 +123,9 @@
 
         #endregion
         private Label label1;
-        private Button button4;
         private Button button5;
-        private TextBox textBox1;
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
+        private Button btnEditar;
     }
 }

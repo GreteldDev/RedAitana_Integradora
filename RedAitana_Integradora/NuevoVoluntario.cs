@@ -12,15 +12,15 @@ using RedAitana_Integradora.BSD; // Asegúrate de tener la referencia nugget a M
 
 namespace RedAitana_Integradora
 {
-   
+
     public partial class NuevoVoluntario : Form
     {
         public NuevoVoluntario()
         {
             InitializeComponent();
         }
-    
-        private void NuevoVoluntario_Load(object sender, EventArgs e) 
+
+        private void NuevoVoluntario_Load(object sender, EventArgs e)
         {   // Cargar los roles en el ComboBox
             List<OpcionRol> roles = new List<OpcionRol>
 {
@@ -44,8 +44,7 @@ namespace RedAitana_Integradora
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellidos.Text) ||
-                string.IsNullOrWhiteSpace(txtCorreo.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text) ||
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtPrimerApellido.Text) ||
                 comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Por favor, complete todos los campos.");
@@ -54,47 +53,43 @@ namespace RedAitana_Integradora
 
             using (ConexionMySQL conexion = new ConexionMySQL())
             {
-                    conexion.AbrirConexion();
-                    string query = "INSERT INTO personalextra (IdRol, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, correo, telefono) " +
-                        "VALUES (@IdRol, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @correo, @telefono)";
-                    MySqlCommand comando = new MySqlCommand(query, conexion.ObtenerConexion()); // Obtener la conexión desde la clase ConexionMySQL
-                
+                conexion.AbrirConexion();
+                string query = "INSERT INTO personalextra (IdRol, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido) " +
+                    "VALUES (@IdRol, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido)";
+                MySqlCommand comando = new MySqlCommand(query, conexion.ObtenerConexion()); // Obtener la conexión desde la clase ConexionMySQL
+
                 int idRolSeleccionado = ((OpcionRol)comboBox1.SelectedItem).Id;
                 comando.Parameters.AddWithValue("@IdRol", idRolSeleccionado); // Asegúrate de que idRolSeleccionado esté definido y tenga el valor correcto
                                                                               // Dividir el nombre completo en primer y segundo nombre
 
 
-                    string nombreCompleto = txtNombre.Text.Trim(); 
-                    string[] partes = nombreCompleto.Split(' ', StringSplitOptions.RemoveEmptyEntries); // Divide el nombre completo en partes, eliminando espacios en blanco
+                string nombreCompleto = txtNombre.Text.Trim();
+                string[] partes = nombreCompleto.Split(' ', StringSplitOptions.RemoveEmptyEntries); // Divide el nombre completo en partes, eliminando espacios en blanco
 
                 string primerNombre = partes.Length > 0 ? partes[0] : "";
-                    string segundoNombre = partes.Length > 1 ? string.Join(" ", partes.Skip(1)) : "";
+                string segundoNombre = partes.Length > 1 ? string.Join(" ", partes.Skip(1)) : "";
 
-                    comando.Parameters.AddWithValue("@PrimerNombre", primerNombre);
-                    comando.Parameters.AddWithValue("@SegundoNombre", segundoNombre);
+                comando.Parameters.AddWithValue("@PrimerNombre", primerNombre);
+                comando.Parameters.AddWithValue("@SegundoNombre", segundoNombre);
 
-                    string apellidos = txtApellidos.Text.Trim();
-                    string[] partesApellidos = apellidos.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                string apellidos = txtPrimerApellido.Text.Trim();
+                string[] partesApellidos = apellidos.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-                    string primerApellido = partesApellidos.Length > 0 ? partesApellidos[0] : "";
-                    string segundoApellido = partesApellidos.Length > 1 ? string.Join(" ", partesApellidos.Skip(1)) : "";
+                string primerApellido = partesApellidos.Length > 0 ? partesApellidos[0] : "";
+                string segundoApellido = partesApellidos.Length > 1 ? string.Join(" ", partesApellidos.Skip(1)) : "";
 
-                    comando.Parameters.AddWithValue("@PrimerApellido", primerApellido);
-                    comando.Parameters.AddWithValue("@SegundoApellido", segundoApellido);
+                comando.Parameters.AddWithValue("@PrimerApellido", primerApellido);
+                comando.Parameters.AddWithValue("@SegundoApellido", segundoApellido);
+                int filasAfectadas = comando.ExecuteNonQuery(); //
+                if (filasAfectadas > 0)
+                {
+                    MessageBox.Show("Registro exitoso.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al registrar.");
+                }
 
-
-                    comando.Parameters.AddWithValue("@telefono", txtTelefono.Text);
-                    comando.Parameters.AddWithValue("@correo", txtCorreo.Text);
-                    int filasAfectadas = comando.ExecuteNonQuery(); //
-                    if (filasAfectadas > 0)
-                    {
-                        MessageBox.Show("Registro exitoso.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error al registrar.");
-                    }
-               
             }
         }
 
@@ -103,18 +98,20 @@ namespace RedAitana_Integradora
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         { }
-         
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             // Limpiar los controles del formulario 
             txtNombre.Clear();
-            txtApellidos.Clear();
-            txtCorreo.Clear();
-            txtTelefono.Clear();
-            comboBox1.SelectedIndex = -1; 
+            txtPrimerApellido.Clear();
+            txtSegundoApellido.Clear();
+            comboBox1.SelectedIndex = -1;
         }
 
-        
+        private void btnExaminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

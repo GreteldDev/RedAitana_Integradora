@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionVoluntarios));
             panel2 = new Panel();
+            btnEditar = new Button();
             label1 = new Label();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
+            btnAgregr = new Button();
             txtBuscar = new TextBox();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
-            button2 = new Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -46,10 +46,10 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(button2);
+            panel2.Controls.Add(btnEditar);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btnAgregr);
             panel2.Controls.Add(txtBuscar);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label4);
@@ -60,6 +60,16 @@
             panel2.Size = new Size(800, 450);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
+            // 
+            // btnEditar
+            // 
+            btnEditar.Location = new Point(347, 164);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(94, 29);
+            btnEditar.TabIndex = 11;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // label1
             // 
@@ -80,18 +90,18 @@
             dataGridView1.TabIndex = 9;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // button1
+            // btnAgregr
             // 
-            button1.BackColor = Color.FromArgb(177, 135, 193);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(25, 158);
-            button1.Name = "button1";
-            button1.Size = new Size(228, 41);
-            button1.TabIndex = 8;
-            button1.Text = "+ Nuevo Visitante/Beneficiario";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnAgregr.BackColor = Color.FromArgb(177, 135, 193);
+            btnAgregr.FlatStyle = FlatStyle.Flat;
+            btnAgregr.ForeColor = Color.White;
+            btnAgregr.Location = new Point(25, 158);
+            btnAgregr.Name = "btnAgregr";
+            btnAgregr.Size = new Size(228, 41);
+            btnAgregr.TabIndex = 8;
+            btnAgregr.Text = "+ Nuevo Visitante/Beneficiario";
+            btnAgregr.UseVisualStyleBackColor = false;
+            btnAgregr.Click += button1_Click;
             // 
             // txtBuscar
             // 
@@ -132,15 +142,6 @@
             label3.TabIndex = 5;
             label3.Text = "Catálogo de Visitantes y Beneficiarios";
             // 
-            // button2
-            // 
-            button2.Location = new Point(489, 162);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 11;
-            button2.Text = "editar";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // GestionVoluntarios
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -163,10 +164,10 @@
         private PictureBox pictureBox2;
         private Label label4;
         private Label label3;
-        private Button button1;
+        private Button btnAgregr;
         private TextBox txtBuscar;
         private DataGridView dataGridView1;
         private Label label1;
-        private Button button2;
+        private Button btnEditar;
     }
 }

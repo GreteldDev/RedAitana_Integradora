@@ -32,8 +32,12 @@ namespace RedAitana_Integradora
         {
             var nuevoEmpleado = new NuevoEmpleado(); //Abrir ventana de nuevo empleado
             nuevoEmpleado.ShowDialog(); // Mostrar la ventana de nuevo empleado
-           
+
         }
-        
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

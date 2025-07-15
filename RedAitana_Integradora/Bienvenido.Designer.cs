@@ -50,8 +50,9 @@ namespace RedAitana_Integradora
             panel1.Controls.Add(btnRegistroGeneral);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 444);
+            panel1.Size = new Size(312, 555);
             panel1.TabIndex = 3;
             // 
             // panel3
@@ -60,17 +61,19 @@ namespace RedAitana_Integradora
             panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(4, 4, 4, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(250, 95);
+            panel3.Size = new Size(312, 119);
             panel3.TabIndex = 4;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.ForeColor = Color.White;
-            label5.Location = new Point(7, 75);
+            label5.Location = new Point(9, 94);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(237, 20);
+            label5.Size = new Size(278, 25);
             label5.TabIndex = 1;
             label5.Text = "______________________________________";
             // 
@@ -79,9 +82,10 @@ namespace RedAitana_Integradora
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(23, 25);
+            label2.Location = new Point(29, 31);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(201, 50);
+            label2.Size = new Size(245, 61);
             label2.TabIndex = 1;
             label2.Text = "RedAitana";
             label2.Click += label2_Click_1;
@@ -93,9 +97,10 @@ namespace RedAitana_Integradora
             btnGestionVoluntarios.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
             btnGestionVoluntarios.FlatStyle = FlatStyle.Flat;
             btnGestionVoluntarios.ForeColor = Color.White;
-            btnGestionVoluntarios.Location = new Point(13, 280);
+            btnGestionVoluntarios.Location = new Point(16, 350);
+            btnGestionVoluntarios.Margin = new Padding(4, 4, 4, 4);
             btnGestionVoluntarios.Name = "btnGestionVoluntarios";
-            btnGestionVoluntarios.Size = new Size(222, 61);
+            btnGestionVoluntarios.Size = new Size(278, 76);
             btnGestionVoluntarios.TabIndex = 3;
             btnGestionVoluntarios.Text = "Gestión de Visitantes y Beneficiarios";
             btnGestionVoluntarios.UseVisualStyleBackColor = false;
@@ -108,9 +113,10 @@ namespace RedAitana_Integradora
             btnGestionEmpleados.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
             btnGestionEmpleados.FlatStyle = FlatStyle.Flat;
             btnGestionEmpleados.ForeColor = Color.White;
-            btnGestionEmpleados.Location = new Point(12, 197);
+            btnGestionEmpleados.Location = new Point(15, 246);
+            btnGestionEmpleados.Margin = new Padding(4, 4, 4, 4);
             btnGestionEmpleados.Name = "btnGestionEmpleados";
-            btnGestionEmpleados.Size = new Size(223, 61);
+            btnGestionEmpleados.Size = new Size(279, 76);
             btnGestionEmpleados.TabIndex = 2;
             btnGestionEmpleados.Text = "Gestión de Empleados y Voluntarios";
             btnGestionEmpleados.UseVisualStyleBackColor = false;
@@ -123,9 +129,10 @@ namespace RedAitana_Integradora
             btnRegistroGeneral.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
             btnRegistroGeneral.FlatStyle = FlatStyle.Flat;
             btnRegistroGeneral.ForeColor = Color.White;
-            btnRegistroGeneral.Location = new Point(13, 114);
+            btnRegistroGeneral.Location = new Point(16, 142);
+            btnRegistroGeneral.Margin = new Padding(4, 4, 4, 4);
             btnRegistroGeneral.Name = "btnRegistroGeneral";
-            btnRegistroGeneral.Size = new Size(223, 61);
+            btnRegistroGeneral.Size = new Size(279, 76);
             btnRegistroGeneral.TabIndex = 0;
             btnRegistroGeneral.Text = "Registro General";
             btnRegistroGeneral.UseVisualStyleBackColor = false;
@@ -135,19 +142,22 @@ namespace RedAitana_Integradora
             // 
             panelContenedor.BackColor = Color.White;
             panelContenedor.Dock = DockStyle.Fill;
-            panelContenedor.Location = new Point(250, 0);
+            panelContenedor.Location = new Point(312, 0);
+            panelContenedor.Margin = new Padding(4, 4, 4, 4);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(605, 444);
+            panelContenedor.Size = new Size(757, 555);
             panelContenedor.TabIndex = 4;
+            panelContenedor.Paint += panelContenedor_Paint;
             // 
             // Bienvenido
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 444);
+            ClientSize = new Size(1069, 555);
             Controls.Add(panelContenedor);
             Controls.Add(panel1);
             Location = new Point(372, 191);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Bienvenido";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RedAitana - Menú";

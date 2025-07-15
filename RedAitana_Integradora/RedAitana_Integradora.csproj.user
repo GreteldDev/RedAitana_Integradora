@@ -4,6 +4,9 @@
     <Compile Update="BSD\ConexionMySQL.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EditarGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GestionEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
