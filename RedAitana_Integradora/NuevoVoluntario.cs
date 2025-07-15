@@ -24,12 +24,12 @@ namespace RedAitana_Integradora
         {   // Cargar los roles en el ComboBox
             List<OpcionRol> roles = new List<OpcionRol>
 {
-            new OpcionRol { Id = 1, Nombre = "Voluntario" },
-            new OpcionRol { Id = 2, Nombre = "Empleado" }
+            new OpcionRol { Id = 4, Nombre = "Visitante" },
+            new OpcionRol { Id = 5, Nombre = "Beneficiario" }
 };
 
             comboBox1.DataSource = roles;
-            comboBox1.DisplayMember = "Nombre"; // Muestra "Voluntario" y "Empleado"
+            comboBox1.DisplayMember = "Nombre"; // Muestra "Visitante y Beneficiario"
             comboBox1.ValueMember = "Id";       // Internamente guarda el 1 o 2
             comboBox1.SelectedIndex = -1;       // Opcional: que no haya nada seleccionado al inicio
 
@@ -39,11 +39,6 @@ namespace RedAitana_Integradora
         {
             public int Id { get; set; }
             public string Nombre { get; set; }
-
-            public override string ToString()
-            {
-                return Nombre; // Lo que se muestra en el ComboBox
-            }
         }
 
 
@@ -60,7 +55,7 @@ namespace RedAitana_Integradora
             using (ConexionMySQL conexion = new ConexionMySQL())
             {
                     conexion.AbrirConexion();
-                    string query = "INSERT INTO personal (IdRol, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, correo, telefono) " +
+                    string query = "INSERT INTO personalextra (IdRol, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, correo, telefono) " +
                         "VALUES (@IdRol, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @correo, @telefono)";
                     MySqlCommand comando = new MySqlCommand(query, conexion.ObtenerConexion()); // Obtener la conexión desde la clase ConexionMySQL
                 

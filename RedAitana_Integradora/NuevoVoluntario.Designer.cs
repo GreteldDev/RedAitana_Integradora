@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoVoluntario));
             panel1 = new Panel();
+            button1 = new Button();
+            pictureBox1 = new PictureBox();
             label2 = new Label();
             comboBox1 = new ComboBox();
             txtApellidos = new TextBox();
@@ -46,12 +48,17 @@
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
+            button2 = new Button();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(txtApellidos);
@@ -73,6 +80,23 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 450);
             panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(46, 280);
+            button1.Name = "button1";
+            button1.Size = new Size(122, 45);
+            button1.TabIndex = 51;
+            button1.Text = "Examinar";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(48, 117);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(128, 134);
+            pictureBox1.TabIndex = 50;
+            pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -218,9 +242,18 @@
             label3.ForeColor = Color.Black;
             label3.Location = new Point(104, 44);
             label3.Name = "label3";
-            label3.Size = new Size(445, 38);
+            label3.Size = new Size(449, 38);
             label3.TabIndex = 30;
-            label3.Text = "Nuevo Voluntario o Empleado :b";
+            label3.Text = "Nuevo Visitante o Beneficiario :b";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(207, 361);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 52;
+            button2.Text = "editar";
+            button2.UseVisualStyleBackColor = true;
             // 
             // NuevoVoluntario
             // 
@@ -235,6 +268,7 @@
             Load += NuevoVoluntario_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -247,16 +281,19 @@
         private Label label10;
         private Button btnCancelar;
         private Button btnGuardar;
-        private TextBox txtCorreo;
-        private TextBox txtTelefono;
         private TextBox txtNombre;
-        private Label label9;
-        private Label label8;
         private Label label1;
         private PictureBox pictureBox2;
         private Label label4;
         private Label label3;
         private ComboBox comboBox1;
         private Label label2;
+        private TextBox txtCorreo;
+        private TextBox txtTelefono;
+        private Label label9;
+        private Label label8;
+        private Button button1;
+        private PictureBox pictureBox1;
+        private Button button2;
     }
 }

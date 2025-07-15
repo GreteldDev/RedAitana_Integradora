@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionVoluntarios));
             panel2 = new Panel();
+            label1 = new Label();
             dataGridView1 = new DataGridView();
             button1 = new Button();
-            textBox1 = new TextBox();
+            txtBuscar = new TextBox();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
+            button2 = new Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -44,9 +46,11 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(label1);
             panel2.Controls.Add(dataGridView1);
             panel2.Controls.Add(button1);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtBuscar);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
@@ -56,6 +60,15 @@
             panel2.Size = new Size(800, 450);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(25, 117);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 20);
+            label1.TabIndex = 10;
+            label1.Text = "Buscador";
             // 
             // dataGridView1
             // 
@@ -74,23 +87,24 @@
             button1.ForeColor = Color.White;
             button1.Location = new Point(25, 158);
             button1.Name = "button1";
-            button1.Size = new Size(164, 41);
+            button1.Size = new Size(228, 41);
             button1.TabIndex = 8;
-            button1.Text = "+ Nuevo Voluntario";
+            button1.Text = "+ Nuevo Visitante/Beneficiario";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // textBox1
+            // txtBuscar
             // 
-            textBox1.Location = new Point(23, 114);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(493, 27);
-            textBox1.TabIndex = 7;
+            txtBuscar.Location = new Point(124, 114);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(317, 27);
+            txtBuscar.TabIndex = 7;
+            txtBuscar.TextChanged += txtBuscar_TextChanged;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(426, 12);
+            pictureBox2.Location = new Point(549, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -101,7 +115,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(0, 75);
+            label4.Location = new Point(3, 77);
             label4.Name = "label4";
             label4.Size = new Size(543, 20);
             label4.TabIndex = 3;
@@ -112,11 +126,20 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(23, 28);
+            label3.Location = new Point(25, 26);
             label3.Name = "label3";
-            label3.Size = new Size(330, 38);
+            label3.Size = new Size(509, 38);
             label3.TabIndex = 5;
-            label3.Text = "Catálogo de voluntarios";
+            label3.Text = "Catálogo de Visitantes y Beneficiarios";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(489, 162);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 11;
+            button2.Text = "editar";
+            button2.UseVisualStyleBackColor = true;
             // 
             // GestionVoluntarios
             // 
@@ -141,7 +164,9 @@
         private Label label4;
         private Label label3;
         private Button button1;
-        private TextBox textBox1;
+        private TextBox txtBuscar;
         private DataGridView dataGridView1;
+        private Label label1;
+        private Button button2;
     }
 }
