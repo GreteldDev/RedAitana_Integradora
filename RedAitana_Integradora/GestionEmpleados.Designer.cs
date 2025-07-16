@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionEmpleados));
             panel2 = new Panel();
             panel4 = new Panel();
+            btnEditar = new Button();
+            label1 = new Label();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            txtBuscar = new TextBox();
+            btnAgregar = new Button();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
@@ -48,69 +50,97 @@
             panel2.Controls.Add(panel4);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(4, 4, 4, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1000, 562);
+            panel2.Size = new Size(800, 450);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
             // 
             // panel4
             // 
             panel4.BackColor = Color.White;
+            panel4.Controls.Add(btnEditar);
+            panel4.Controls.Add(label1);
             panel4.Controls.Add(dataGridView1);
-            panel4.Controls.Add(button1);
-            panel4.Controls.Add(textBox1);
+            panel4.Controls.Add(txtBuscar);
+            panel4.Controls.Add(btnAgregar);
             panel4.Controls.Add(pictureBox2);
             panel4.Controls.Add(label4);
             panel4.Controls.Add(label3);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(0, 0);
-            panel4.Margin = new Padding(4, 4, 4, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1000, 562);
+            panel4.Size = new Size(800, 450);
             panel4.TabIndex = 3;
             panel4.Paint += panel4_Paint;
+            // 
+            // btnEditar
+            // 
+            btnEditar.BackColor = Color.FromArgb(177, 135, 193);
+            btnEditar.FlatAppearance.BorderSize = 0;
+            btnEditar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnEditar.FlatStyle = FlatStyle.Flat;
+            btnEditar.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEditar.ForeColor = Color.White;
+            btnEditar.Location = new Point(341, 153);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(105, 41);
+            btnEditar.TabIndex = 17;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = false;
+            btnEditar.Click += btnEditar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(71, 48, 120);
+            label1.Location = new Point(34, 110);
+            label1.Name = "label1";
+            label1.Size = new Size(78, 20);
+            label1.TabIndex = 12;
+            label1.Text = "Buscador";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(36, 275);
-            dataGridView1.Margin = new Padding(4, 4, 4, 4);
+            dataGridView1.Location = new Point(29, 220);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(630, 266);
+            dataGridView1.Size = new Size(504, 213);
             dataGridView1.TabIndex = 16;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // button1
+            // txtBuscar
             // 
-            button1.BackColor = Color.FromArgb(177, 135, 193);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(36, 191);
-            button1.Margin = new Padding(4, 4, 4, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(205, 51);
-            button1.TabIndex = 15;
-            button1.Text = "+ Nuevo Empleado";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            txtBuscar.BackColor = Color.FromArgb(224, 200, 232);
+            txtBuscar.Font = new Font("Segoe UI", 9F);
+            txtBuscar.Location = new Point(169, 104);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(317, 27);
+            txtBuscar.TabIndex = 11;
             // 
-            // textBox1
+            // btnAgregar
             // 
-            textBox1.Location = new Point(34, 150);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(615, 31);
-            textBox1.TabIndex = 14;
+            btnAgregar.BackColor = Color.FromArgb(177, 135, 193);
+            btnAgregar.FlatAppearance.BorderSize = 0;
+            btnAgregar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnAgregar.FlatStyle = FlatStyle.Flat;
+            btnAgregar.Font = new Font("Century Gothic", 9F);
+            btnAgregar.ForeColor = Color.White;
+            btnAgregar.Location = new Point(29, 153);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(283, 41);
+            btnAgregar.TabIndex = 15;
+            btnAgregar.Text = "+ Nuevo Empleado/Beneficiario";
+            btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += button1_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(538, 22);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Location = new Point(470, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(140, 92);
+            pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
@@ -119,32 +149,29 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(5, 101);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(3, 66);
             label4.Name = "label4";
-            label4.Size = new Size(635, 25);
+            label4.Size = new Size(543, 20);
             label4.TabIndex = 11;
             label4.Text = "_________________________________________________________________________________________";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(34, 42);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(71, 48, 120);
+            label3.Location = new Point(29, 32);
             label3.Name = "label3";
-            label3.Size = new Size(383, 45);
+            label3.Size = new Size(435, 27);
             label3.TabIndex = 12;
-            label3.Text = "Catálogo de Empleados";
+            label3.Text = "Catálogo de Empleados y Voluntarios";
             // 
             // GestionEmpleados
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(800, 450);
             Controls.Add(panel2);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "GestionEmpleados";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "GestionEmpleados";
@@ -160,10 +187,12 @@
         private Panel panel2;
         private Panel panel4;
         private DataGridView dataGridView1;
-        private Button button1;
-        private TextBox textBox1;
+        private Button btnAgregar;
         private PictureBox pictureBox2;
         private Label label4;
         private Label label3;
+        private Label label1;
+        private TextBox txtBuscar;
+        private Button btnEditar;
     }
 }

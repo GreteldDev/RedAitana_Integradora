@@ -55,10 +55,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(110, 87);
             label1.Name = "label1";
-            label1.Size = new Size(110, 28);
+            label1.Size = new Size(112, 23);
             label1.TabIndex = 1;
             label1.Text = "RedAitana";
             label1.Click += label1_Click;
@@ -66,28 +66,31 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 9F);
             label2.ForeColor = SystemColors.ControlDarkDark;
-            label2.Location = new Point(41, 121);
+            label2.Location = new Point(23, 121);
             label2.Name = "label2";
-            label2.Size = new Size(267, 20);
+            label2.Size = new Size(302, 20);
             label2.TabIndex = 2;
             label2.Text = "Ingrese sus credenciales para continuar";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(52, 169);
             label3.Name = "label3";
-            label3.Size = new Size(59, 20);
+            label3.Size = new Size(63, 20);
             label3.TabIndex = 3;
             label3.Text = "Usuario";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 9F);
             label4.Location = new Point(52, 237);
             label4.Name = "label4";
-            label4.Size = new Size(83, 20);
+            label4.Size = new Size(95, 20);
             label4.TabIndex = 4;
             label4.Text = "Contraseña";
             // 
@@ -111,7 +114,8 @@
             // btnIngresar
             // 
             btnIngresar.BackColor = Color.FromArgb(223, 128, 108);
-            btnIngresar.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnIngresar.FlatAppearance.MouseOverBackColor = Color.OrangeRed;
+            btnIngresar.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnIngresar.ForeColor = Color.White;
             btnIngresar.Location = new Point(76, 309);
             btnIngresar.Name = "btnIngresar";

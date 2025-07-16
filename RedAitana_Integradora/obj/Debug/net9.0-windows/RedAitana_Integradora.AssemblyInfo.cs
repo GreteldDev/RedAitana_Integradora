@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedAitana_Integradora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7dc93fce60e5bbd2a36eea48ef6136d760d2a81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bf4bc07df8d68794439f18e308d363cf431a87f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedAitana_Integradora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedAitana_Integradora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

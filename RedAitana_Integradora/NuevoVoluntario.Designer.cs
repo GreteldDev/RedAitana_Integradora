@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoVoluntario));
             panel1 = new Panel();
+            label5 = new Label();
+            txtSegundoApellido = new TextBox();
             btnExaminar = new Button();
-            pictureBox1 = new PictureBox();
+            PicFoto = new PictureBox();
             label2 = new Label();
             comboBox1 = new ComboBox();
             txtPrimerApellido = new TextBox();
@@ -44,10 +46,8 @@
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
-            txtSegundoApellido = new TextBox();
-            label5 = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PicFoto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(txtSegundoApellido);
             panel1.Controls.Add(btnExaminar);
-            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(PicFoto);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(txtPrimerApellido);
@@ -74,38 +74,65 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 450);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 9F);
+            label5.Location = new Point(260, 230);
+            label5.Name = "label5";
+            label5.Size = new Size(138, 20);
+            label5.TabIndex = 53;
+            label5.Text = "Segundo Apellido";
+            // 
+            // txtSegundoApellido
+            // 
+            txtSegundoApellido.Location = new Point(415, 223);
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Size = new Size(207, 27);
+            txtSegundoApellido.TabIndex = 52;
             // 
             // btnExaminar
             // 
-            btnExaminar.Location = new Point(46, 280);
+            btnExaminar.BackColor = Color.FromArgb(177, 135, 193);
+            btnExaminar.FlatAppearance.BorderSize = 0;
+            btnExaminar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnExaminar.FlatStyle = FlatStyle.Flat;
+            btnExaminar.Font = new Font("Century Gothic", 9F);
+            btnExaminar.ForeColor = Color.White;
+            btnExaminar.Location = new Point(50, 332);
             btnExaminar.Name = "btnExaminar";
             btnExaminar.Size = new Size(122, 45);
             btnExaminar.TabIndex = 51;
             btnExaminar.Text = "Examinar";
-            btnExaminar.UseVisualStyleBackColor = true;
+            btnExaminar.UseVisualStyleBackColor = false;
             btnExaminar.Click += btnExaminar_Click;
             // 
-            // pictureBox1
+            // PicFoto
             // 
-            pictureBox1.Location = new Point(48, 117);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(128, 134);
-            pictureBox1.TabIndex = 50;
-            pictureBox1.TabStop = false;
+            PicFoto.Location = new Point(50, 143);
+            PicFoto.Name = "PicFoto";
+            PicFoto.Size = new Size(151, 163);
+            PicFoto.SizeMode = PictureBoxSizeMode.Zoom;
+            PicFoto.TabIndex = 50;
+            PicFoto.TabStop = false;
+            PicFoto.Click += PicFoto_Click_1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(217, 255);
+            label2.Font = new Font("Century Gothic", 9F);
+            label2.Location = new Point(260, 267);
             label2.Name = "label2";
-            label2.Size = new Size(119, 20);
+            label2.Size = new Size(131, 20);
             label2.TabIndex = 49;
             label2.Text = "Selección de Rol";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(372, 252);
+            comboBox1.Location = new Point(415, 264);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(207, 28);
             comboBox1.TabIndex = 48;
@@ -113,7 +140,7 @@
             // 
             // txtPrimerApellido
             // 
-            txtPrimerApellido.Location = new Point(372, 166);
+            txtPrimerApellido.Location = new Point(415, 178);
             txtPrimerApellido.Name = "txtPrimerApellido";
             txtPrimerApellido.Size = new Size(207, 27);
             txtPrimerApellido.TabIndex = 47;
@@ -122,16 +149,17 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(217, 173);
+            label12.Font = new Font("Century Gothic", 9F);
+            label12.Location = new Point(260, 185);
             label12.Name = "label12";
-            label12.Size = new Size(113, 20);
+            label12.Size = new Size(118, 20);
             label12.TabIndex = 46;
             label12.Text = "Primer Apellido";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(217, 130);
+            label10.Location = new Point(219, 143);
             label10.Name = "label10";
             label10.Size = new Size(0, 20);
             label10.TabIndex = 43;
@@ -139,9 +167,11 @@
             // btnCancelar
             // 
             btnCancelar.BackColor = Color.FromArgb(177, 135, 193);
+            btnCancelar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
             btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Font = new Font("Century Gothic", 9F);
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(485, 321);
+            btnCancelar.Location = new Point(528, 332);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 41);
             btnCancelar.TabIndex = 42;
@@ -152,9 +182,11 @@
             // btnGuardar
             // 
             btnGuardar.BackColor = Color.FromArgb(177, 135, 193);
+            btnGuardar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
             btnGuardar.FlatStyle = FlatStyle.Flat;
+            btnGuardar.Font = new Font("Century Gothic", 9F);
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(372, 321);
+            btnGuardar.Location = new Point(415, 332);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(94, 41);
             btnGuardar.TabIndex = 41;
@@ -164,7 +196,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(372, 131);
+            txtNombre.Location = new Point(415, 143);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(207, 27);
             txtNombre.TabIndex = 37;
@@ -172,16 +204,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(217, 131);
+            label1.Font = new Font("Century Gothic", 9F);
+            label1.Location = new Point(260, 143);
             label1.Name = "label1";
-            label1.Size = new Size(64, 20);
+            label1.Size = new Size(68, 20);
             label1.TabIndex = 33;
             label1.Text = "Nombre";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(555, 19);
+            pictureBox2.Location = new Point(528, 19);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -192,7 +225,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(129, 82);
+            label4.Location = new Point(75, 93);
             label4.Name = "label4";
             label4.Size = new Size(543, 20);
             label4.TabIndex = 29;
@@ -201,29 +234,13 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(104, 44);
+            label3.Location = new Point(75, 52);
             label3.Name = "label3";
-            label3.Size = new Size(449, 38);
+            label3.Size = new Size(354, 27);
             label3.TabIndex = 30;
-            label3.Text = "Nuevo Visitante o Beneficiario :b";
-            // 
-            // txtSegundoApellido
-            // 
-            txtSegundoApellido.Location = new Point(372, 211);
-            txtSegundoApellido.Name = "txtSegundoApellido";
-            txtSegundoApellido.Size = new Size(207, 27);
-            txtSegundoApellido.TabIndex = 52;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(217, 218);
-            label5.Name = "label5";
-            label5.Size = new Size(129, 20);
-            label5.TabIndex = 53;
-            label5.Text = "Segundo Apellido";
+            label3.Text = "Nuevo Visitante o Beneficiario ";
             // 
             // NuevoVoluntario
             // 
@@ -238,7 +255,7 @@
             Load += NuevoVoluntario_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PicFoto).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -259,7 +276,7 @@
         private ComboBox comboBox1;
         private Label label2;
         private Button btnExaminar;
-        private PictureBox pictureBox1;
+        private PictureBox PicFoto;
         private Label label5;
         private TextBox txtSegundoApellido;
     }

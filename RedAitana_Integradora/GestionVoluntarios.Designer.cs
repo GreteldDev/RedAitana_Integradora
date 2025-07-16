@@ -33,7 +33,7 @@
             btnEditar = new Button();
             label1 = new Label();
             dataGridView1 = new DataGridView();
-            btnAgregr = new Button();
+            btnAgregar = new Button();
             txtBuscar = new TextBox();
             pictureBox2 = new PictureBox();
             label4 = new Label();
@@ -49,7 +49,7 @@
             panel2.Controls.Add(btnEditar);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(btnAgregr);
+            panel2.Controls.Add(btnAgregar);
             panel2.Controls.Add(txtBuscar);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label4);
@@ -63,20 +63,28 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(347, 164);
+            btnEditar.BackColor = Color.FromArgb(177, 135, 193);
+            btnEditar.FlatAppearance.BorderSize = 0;
+            btnEditar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnEditar.FlatStyle = FlatStyle.Flat;
+            btnEditar.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEditar.ForeColor = Color.White;
+            btnEditar.Location = new Point(336, 158);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(94, 29);
+            btnEditar.Size = new Size(105, 41);
             btnEditar.TabIndex = 11;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(71, 48, 120);
             label1.Location = new Point(25, 117);
             label1.Name = "label1";
-            label1.Size = new Size(70, 20);
+            label1.Size = new Size(78, 20);
             label1.TabIndex = 10;
             label1.Text = "Buscador";
             // 
@@ -90,22 +98,27 @@
             dataGridView1.TabIndex = 9;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // btnAgregr
+            // btnAgregar
             // 
-            btnAgregr.BackColor = Color.FromArgb(177, 135, 193);
-            btnAgregr.FlatStyle = FlatStyle.Flat;
-            btnAgregr.ForeColor = Color.White;
-            btnAgregr.Location = new Point(25, 158);
-            btnAgregr.Name = "btnAgregr";
-            btnAgregr.Size = new Size(228, 41);
-            btnAgregr.TabIndex = 8;
-            btnAgregr.Text = "+ Nuevo Visitante/Beneficiario";
-            btnAgregr.UseVisualStyleBackColor = false;
-            btnAgregr.Click += button1_Click;
+            btnAgregar.BackColor = Color.FromArgb(177, 135, 193);
+            btnAgregar.FlatAppearance.BorderSize = 0;
+            btnAgregar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnAgregar.FlatStyle = FlatStyle.Flat;
+            btnAgregar.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAgregar.ForeColor = Color.White;
+            btnAgregar.Location = new Point(25, 158);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(280, 41);
+            btnAgregar.TabIndex = 8;
+            btnAgregar.Text = "+ Nuevo Visitante/Beneficiario";
+            btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += button1_Click;
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(124, 114);
+            txtBuscar.BackColor = Color.FromArgb(224, 200, 232);
+            txtBuscar.Font = new Font("Segoe UI", 9F);
+            txtBuscar.Location = new Point(160, 111);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new Size(317, 27);
             txtBuscar.TabIndex = 7;
@@ -114,7 +127,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(549, 12);
+            pictureBox2.Location = new Point(460, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -134,11 +147,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(25, 26);
+            label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(71, 48, 120);
+            label3.Location = new Point(20, 33);
             label3.Name = "label3";
-            label3.Size = new Size(509, 38);
+            label3.Size = new Size(434, 27);
             label3.TabIndex = 5;
             label3.Text = "Catálogo de Visitantes y Beneficiarios";
             // 
@@ -164,7 +177,7 @@
         private PictureBox pictureBox2;
         private Label label4;
         private Label label3;
-        private Button btnAgregr;
+        private Button btnAgregar;
         private TextBox txtBuscar;
         private DataGridView dataGridView1;
         private Label label1;

@@ -20,14 +20,14 @@ namespace RedAitana_Integradora
             {
                 MessageBox.Show("Bienvenido, administrador", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
-                var bienvenido = new Bienvenido(); //Abrir ventana del menu principal
+                var bienvenido = new MenuPrincipal(); //Abrir ventana del menu principal
                 bienvenido.Show(); // Mostrar la ventana del menú principal
                 this.Hide(); // Ocultar la ventana de inicio de sesión
             }
             else if (usuarioSeleccionado == "Usuario" && contrasenia == "user")
             {
                 MessageBox.Show("Bienvenido, usuario", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                var bienvenido = new Bienvenido();
+                var bienvenido = new MenuPrincipal();
                 bienvenido.Show(); // Mostrar la ventana del menú principal
                 this.Hide();
             }

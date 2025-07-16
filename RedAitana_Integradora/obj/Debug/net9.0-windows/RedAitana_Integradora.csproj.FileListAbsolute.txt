@@ -3,7 +3,6 @@ C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debu
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.runtimeconfig.json
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.dll
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.pdb
-C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.Bienvenido.resources
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GestionEmpleados.resources
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GestionVoluntarios.resources
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.InicioSesion.resources
@@ -35,9 +34,6 @@ C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debu
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.AssemblyReference.cache
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitan.B4B633C9.Up2Date
-C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VisitaPorSeleccion.resources
-C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
-C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VisitaGeneral.resources
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.exe
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.deps.json
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.runtimeconfig.json
@@ -79,7 +75,6 @@ C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Int
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\ref\RedAitana_Integradora.dll
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
 C:\Users\crist\Downloads\proyecto integrador\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources
-C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.exe
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.deps.json
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.runtimeconfig.json
@@ -122,4 +117,6 @@ C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\De
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
-C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
+C:\Users\Duvan\Source\Repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.MenuPrincipal.resources
+C:\Users\Duvan\Source\Repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
+C:\Users\Duvan\Source\Repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources

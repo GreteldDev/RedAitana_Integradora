@@ -39,5 +39,10 @@ namespace RedAitana_Integradora
         {
 
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            var editarGeneral = new EditarGeneral();
+        }
     }
 }
