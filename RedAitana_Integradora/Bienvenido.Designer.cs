@@ -102,7 +102,7 @@ namespace RedAitana_Integradora
             btnGestionVoluntarios.Name = "btnGestionVoluntarios";
             btnGestionVoluntarios.Size = new Size(278, 76);
             btnGestionVoluntarios.TabIndex = 3;
-            btnGestionVoluntarios.Text = "Gestión de Empleados y Voluntarios";
+            btnGestionVoluntarios.Text = "Gestión de Visitantes y Beneficiarios";
             btnGestionVoluntarios.UseVisualStyleBackColor = false;
             btnGestionVoluntarios.Click += btnGestionVoluntarios_Click_1;
             // 
@@ -118,7 +118,7 @@ namespace RedAitana_Integradora
             btnGestionEmpleados.Name = "btnGestionEmpleados";
             btnGestionEmpleados.Size = new Size(279, 76);
             btnGestionEmpleados.TabIndex = 2;
-            btnGestionEmpleados.Text = "Gestión de Visitantes y Empleados";
+            btnGestionEmpleados.Text = "Gestión de Empleados y Voluntarios";
             btnGestionEmpleados.UseVisualStyleBackColor = false;
             btnGestionEmpleados.Click += btnGestionEmpleados_Click;
             // 

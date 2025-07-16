@@ -30,40 +30,41 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoVoluntario));
             panel1 = new Panel();
+            btnExaminar = new Button();
+            pictureBox1 = new PictureBox();
             label2 = new Label();
             comboBox1 = new ComboBox();
-            txtApellidos = new TextBox();
+            txtPrimerApellido = new TextBox();
             label12 = new Label();
             label10 = new Label();
             btnCancelar = new Button();
             btnGuardar = new Button();
-            txtCorreo = new TextBox();
-            txtTelefono = new TextBox();
             txtNombre = new TextBox();
-            label9 = new Label();
-            label8 = new Label();
             label1 = new Label();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
+            txtSegundoApellido = new TextBox();
+            label5 = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(txtSegundoApellido);
+            panel1.Controls.Add(btnExaminar);
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(txtApellidos);
+            panel1.Controls.Add(txtPrimerApellido);
             panel1.Controls.Add(label12);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGuardar);
-            panel1.Controls.Add(txtCorreo);
-            panel1.Controls.Add(txtTelefono);
             panel1.Controls.Add(txtNombre);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label8);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label4);
@@ -74,10 +75,28 @@
             panel1.Size = new Size(800, 450);
             panel1.TabIndex = 0;
             // 
+            // btnExaminar
+            // 
+            btnExaminar.Location = new Point(46, 280);
+            btnExaminar.Name = "btnExaminar";
+            btnExaminar.Size = new Size(122, 45);
+            btnExaminar.TabIndex = 51;
+            btnExaminar.Text = "Examinar";
+            btnExaminar.UseVisualStyleBackColor = true;
+            btnExaminar.Click += btnExaminar_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(48, 117);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(128, 134);
+            pictureBox1.TabIndex = 50;
+            pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(217, 288);
+            label2.Location = new Point(217, 255);
             label2.Name = "label2";
             label2.Size = new Size(119, 20);
             label2.TabIndex = 49;
@@ -86,28 +105,28 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(372, 285);
+            comboBox1.Location = new Point(372, 252);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(207, 28);
             comboBox1.TabIndex = 48;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
-            // txtApellidos
+            // txtPrimerApellido
             // 
-            txtApellidos.Location = new Point(372, 166);
-            txtApellidos.Name = "txtApellidos";
-            txtApellidos.Size = new Size(207, 27);
-            txtApellidos.TabIndex = 47;
-            txtApellidos.TextChanged += txtPrimerApellido_TextChanged;
+            txtPrimerApellido.Location = new Point(372, 166);
+            txtPrimerApellido.Name = "txtPrimerApellido";
+            txtPrimerApellido.Size = new Size(207, 27);
+            txtPrimerApellido.TabIndex = 47;
+            txtPrimerApellido.TextChanged += txtPrimerApellido_TextChanged;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(217, 166);
+            label12.Location = new Point(217, 173);
             label12.Name = "label12";
-            label12.Size = new Size(72, 20);
+            label12.Size = new Size(113, 20);
             label12.TabIndex = 46;
-            label12.Text = "Apellidos";
+            label12.Text = "Primer Apellido";
             // 
             // label10
             // 
@@ -122,7 +141,7 @@
             btnCancelar.BackColor = Color.FromArgb(177, 135, 193);
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(485, 367);
+            btnCancelar.Location = new Point(485, 321);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 41);
             btnCancelar.TabIndex = 42;
@@ -135,7 +154,7 @@
             btnGuardar.BackColor = Color.FromArgb(177, 135, 193);
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(372, 367);
+            btnGuardar.Location = new Point(372, 321);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(94, 41);
             btnGuardar.TabIndex = 41;
@@ -143,44 +162,12 @@
             btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
-            // txtCorreo
-            // 
-            txtCorreo.Location = new Point(372, 240);
-            txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(207, 27);
-            txtCorreo.TabIndex = 40;
-            // 
-            // txtTelefono
-            // 
-            txtTelefono.Location = new Point(372, 207);
-            txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new Size(207, 27);
-            txtTelefono.TabIndex = 39;
-            // 
             // txtNombre
             // 
             txtNombre.Location = new Point(372, 131);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(207, 27);
             txtNombre.TabIndex = 37;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(217, 240);
-            label9.Name = "label9";
-            label9.Size = new Size(132, 20);
-            label9.TabIndex = 36;
-            label9.Text = "Correo electronico";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(217, 207);
-            label8.Name = "label8";
-            label8.Size = new Size(67, 20);
-            label8.TabIndex = 35;
-            label8.Text = "Teléfono";
             // 
             // label1
             // 
@@ -218,9 +205,25 @@
             label3.ForeColor = Color.Black;
             label3.Location = new Point(104, 44);
             label3.Name = "label3";
-            label3.Size = new Size(445, 38);
+            label3.Size = new Size(449, 38);
             label3.TabIndex = 30;
-            label3.Text = "Nuevo Voluntario o Empleado :b";
+            label3.Text = "Nuevo Visitante o Beneficiario :b";
+            // 
+            // txtSegundoApellido
+            // 
+            txtSegundoApellido.Location = new Point(372, 211);
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Size = new Size(207, 27);
+            txtSegundoApellido.TabIndex = 52;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(217, 218);
+            label5.Name = "label5";
+            label5.Size = new Size(129, 20);
+            label5.TabIndex = 53;
+            label5.Text = "Segundo Apellido";
             // 
             // NuevoVoluntario
             // 
@@ -235,6 +238,7 @@
             Load += NuevoVoluntario_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -242,21 +246,21 @@
         #endregion
 
         private Panel panel1;
-        private TextBox txtApellidos;
+        private TextBox txtPrimerApellido;
         private Label label12;
         private Label label10;
         private Button btnCancelar;
         private Button btnGuardar;
-        private TextBox txtCorreo;
-        private TextBox txtTelefono;
         private TextBox txtNombre;
-        private Label label9;
-        private Label label8;
         private Label label1;
         private PictureBox pictureBox2;
         private Label label4;
         private Label label3;
         private ComboBox comboBox1;
         private Label label2;
+        private Button btnExaminar;
+        private PictureBox pictureBox1;
+        private Label label5;
+        private TextBox txtSegundoApellido;
     }
 }

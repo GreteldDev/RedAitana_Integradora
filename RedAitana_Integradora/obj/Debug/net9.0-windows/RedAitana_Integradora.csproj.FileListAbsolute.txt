@@ -122,3 +122,4 @@ C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\De
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
+C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
