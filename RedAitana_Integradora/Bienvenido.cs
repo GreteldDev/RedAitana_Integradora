@@ -12,6 +12,7 @@ namespace RedAitana_Integradora
 {
     public partial class Bienvenido : Form
     {
+        private Form formularioActivo = null;
         public Bienvenido()
         {
 
@@ -19,51 +20,69 @@ namespace RedAitana_Integradora
 
         }
 
-        private void AbrirFormularioEnPanel(Form formHijo)
+        private void AbrirFormularioEnPanel(Form formHijo, Button boton)
         {
-            // Limpia cualquier control anterior del panel
-            if (panelContenedor.Controls.Count > 0)
-                panelContenedor.Controls.RemoveAt(0);
+            if (formularioActivo != null && formularioActivo.GetType() == formHijo.GetType())
+                return;
 
+            if (formularioActivo != null)
+                formularioActivo.Close();
+
+            ResetearColoresBotones();
+            ActivarBoton(boton);
+
+            formularioActivo = formHijo;
             formHijo.TopLevel = false;
             formHijo.FormBorderStyle = FormBorderStyle.None;
             formHijo.Dock = DockStyle.Fill;
 
+            panelContenedor.Controls.Clear();
             panelContenedor.Controls.Add(formHijo);
             panelContenedor.Tag = formHijo;
 
             formHijo.Show();
         }
 
-        private void Bienvenido_Load_1(object sender, EventArgs e)
+        private void ResetearColoresBotones()
         {
-
+            foreach (Control control in panel1.Controls)
+            {
+                if (control is Button btn)
+                {
+                    btn.BackColor = Color.FromArgb(117, 76, 154); // Color base del menú
+                    btn.ForeColor = Color.White;
+                }
+            }
         }
+        private void ActivarBoton(Button boton)
+        {
+            ResetearColoresBotones();
+            boton.BackColor = Color.FromArgb(223, 128, 108); // Color al seleccionar
+            boton.ForeColor = Color.White;
+        }
+        private void Bienvenido_Load_1(object sender, EventArgs e)
+        { }
 
         private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        { }
 
         private void btnRegistroGeneral_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new RegistroGeneral());
+            AbrirFormularioEnPanel(new RegistroGeneral(), btnRegistroGeneral);
         }
 
         private void btnGestionEmpleados_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new GestionEmpleados());
+            AbrirFormularioEnPanel(new GestionTrabajadores(), btnGestionEmpleados);
         }
 
         private void btnGestionVoluntarios_Click_1(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new GestionVoluntarios());
+            AbrirFormularioEnPanel(new GestionVoluntarios(), btnGestionVoluntarios);
         }
 
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        { }
         // private Label label1;
     }
 }

@@ -123,3 +123,90 @@ C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\De
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
 C:\Users\crist\Desktop\aitana\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
 C:\Users\Duvan\source\repos\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.AssemblyReference.cache
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.Bienvenido.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GestionEmpleados.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GestionTrabajadores.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GestionVoluntarios.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.InicioSesion.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoEmpleado.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoTrabajador.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoVoluntario.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.Properties.Resources.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.RegistroGeneral.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VentanaConfirmacion.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VisitaGeneral.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VisitaPorSeleccion.resources
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.GenerateResource.cache
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.AssemblyInfoInputs.cache
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.AssemblyInfo.cs
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.CoreCompileInputs.cache
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.sourcelink.json
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\refint\RedAitana_Integradora.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.pdb
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.exe
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.deps.json
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.runtimeconfig.json
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.pdb
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\Google.Protobuf.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\K4os.Compression.LZ4.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\K4os.Hash.xxHash.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\MySql.Data.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\ZstdSharp.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitan.B4B633C9.Up2Date
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.genruntimeconfig.cache
+C:\Users\shwep\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\ref\RedAitana_Integradora.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.exe
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.deps.json
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.runtimeconfig.json
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\RedAitana_Integradora.pdb
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\Google.Protobuf.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\MySql.Data.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\ZstdSharp.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\bin\Debug\net9.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.AssemblyReference.cache
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.Bienvenido.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.BSD.ConexionMySQL.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.EditarGeneral.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GestionTrabajadores.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GestionVoluntarios.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.InicioSesion.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoTrabajador.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.NuevoVoluntario.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.Properties.Resources.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.RegistroGeneral.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VentanaConfirmacion.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.VisitaPorSeleccion.resources
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.GenerateResource.cache
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.AssemblyInfoInputs.cache
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.AssemblyInfo.cs
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.csproj.CoreCompileInputs.cache
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.sourcelink.json
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitan.B4B633C9.Up2Date
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\refint\RedAitana_Integradora.dll
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.pdb
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\RedAitana_Integradora.genruntimeconfig.cache
+C:\Users\Duvan\Documents\Tareukis\3er Cuatri\Proyecto Integrador 1\RedAitana_Integradora\RedAitana_Integradora\obj\Debug\net9.0-windows\ref\RedAitana_Integradora.dll

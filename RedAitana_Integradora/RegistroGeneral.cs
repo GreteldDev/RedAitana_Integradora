@@ -51,12 +51,12 @@ namespace RedAitana_Integradora
                 DataTable tabla = new DataTable();
                 adaptador.Fill(tabla); // Llena la tabla con los datos recuperados
 
-                dataGridView1.DataSource = tabla; // Asigna los datos al DataGridView
-                dataGridView1.Columns["id_personal"].Visible = false; // Oculta columnas no necesarias
-                dataGridView1.Columns["id_personalExtra"].Visible = false;
+                dgvGeneral.DataSource = tabla; // Asigna los datos al DataGridView
+                dgvGeneral.Columns["id_personal"].Visible = false; // Oculta columnas no necesarias
+                dgvGeneral.Columns["id_personalExtra"].Visible = false;
 
                 // Establece todas las columnas como solo lectura
-                foreach (DataGridViewColumn columna in dataGridView1.Columns)
+                foreach (DataGridViewColumn columna in dgvGeneral.Columns)
                 {
                     columna.ReadOnly = true;
                 }
@@ -64,55 +64,18 @@ namespace RedAitana_Integradora
                 conexion.CerrarConexion(); // Cierra la conexión a la base de datos
             }
         }
-
-      
-        /// Evento del botón para abrir la ventana de visita manual.
-      
-        private void button4_Click(object sender, EventArgs e) // Botón visita general
-        {
-            var visitaManual = new VisitaGeneral(); // Instancia de la ventana VisitaGeneral
-            visitaManual.ShowDialog(); // Abre la ventana como diálogo modal
-        }
-
-       
+    
         /// Evento del botón para abrir la ventana de visita por selección.
        
-        private void button5_Click(object sender, EventArgs e) // Botón visita por selección
+        private void btnSeleccionar_Click(object sender, EventArgs e) // Botón visita por selección
         {
-            var visitaPorSeleccion = new VisitaPorSeleccion(); // Instancia de la ventana VisitaPorSeleccion
+            var visitaPorSeleccion = new VisitaPorSeleccion(null); // Instancia de la ventana VisitaPorSeleccion
             visitaPorSeleccion.ShowDialog(); // Abre la ventana como diálogo modal
         }
 
-        
-        /// Evento vacío asociado al clic en una celda del DataGridView1.
-        
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Evento no implementado
-        }
-
-       
-        /// Evento vacío asociado al clic en una celda del DataGridView2.
-        
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Evento no utilizado actualmente, pero mantenido para evitar errores
-        }
-
-        
-        /// Evento vacío para el cambio de selección del ComboBox.
-        
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Evento no implementado
-        }
-
-        
-        /// Evento que abre la ventana de edición general.
-        
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            var editarGeneral = new EditarGeneral(); // Instancia de EditarGeneral
+            var editarGeneral = new EditarGeneral(1); // Instancia de EditarGeneral
             editarGeneral.ShowDialog(); // Abre la ventana como diálogo modal
         }
     }

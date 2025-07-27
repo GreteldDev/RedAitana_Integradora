@@ -18,10 +18,14 @@ namespace RedAitana_Integradora
         // Vista para filtrar dinámicamente los datos mostrados en el DataGridView
         private DataView vistaFiltrada;
 
+        // Referencia a la ventana de registro general
+        private RegistroGeneral registroGeneral; 
+
         // Constructor del formulario
-        public VisitaPorSeleccion()
+        public VisitaPorSeleccion(RegistroGeneral rGeneral)
         {
             InitializeComponent(); // Inicializa los componentes del formulario
+            this.registroGeneral = rGeneral; // Guarda la referencia a la ventana de registro general
         }
 
         // Evento del botón Atrás para regresar a la ventana anterior
@@ -145,6 +149,7 @@ namespace RedAitana_Integradora
                 if (filasAfectadas > 0)
                 {
                     MessageBox.Show("Salida registrada correctamente.");
+                    this.Close(); // Cerrar la ventana actual
                 }
                 else
                 {
@@ -196,6 +201,7 @@ namespace RedAitana_Integradora
             }
 
             MessageBox.Show("Entrada registrada.");
+            this.Close(); // Cerrar la ventana actual
         }
     }
 }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using RedAitana_Integradora.BSD;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
@@ -21,10 +22,13 @@ namespace RedAitana_Integradora
         // Vista filtrada que servirá como origen de datos para el DataGridView
         private DataView vistaFiltrada;
 
+        private int tipo; // Variable para determinar el tipo de registro (1: Personal, 2: PersonalExtra)
+
         // Constructor del formulario
-        public EditarGeneral()
+        public EditarGeneral(int tipo)
         {
             InitializeComponent(); // Inicializa los componentes del formulario (interfaz gráfica)
+            this.tipo = tipo;
         }
 
         // =====================
@@ -64,13 +68,13 @@ namespace RedAitana_Integradora
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentRow == null)
+            if (dgvEditar.CurrentRow == null)
             {
                 MessageBox.Show("Selecciona un registro primero.");
                 return;
             }
 
-            string tipoOrigen = dataGridView1.CurrentRow.Cells["TipoOrigen"].Value.ToString();
+            string tipoOrigen = dgvEditar.CurrentRow.Cells["TipoOrigen"].Value.ToString();
 
             // Validación específica para registros de tipo PersonalExtra
             if (tipoOrigen == "PersonalExtra" &&
@@ -181,9 +185,9 @@ namespace RedAitana_Integradora
                     conexion.AbrirConexion();
 
                     string tipoOrigen = "";
-                    if (dataGridView1.CurrentRow != null)
+                    if (dgvEditar.CurrentRow != null)
                     {
-                        tipoOrigen = dataGridView1.CurrentRow.Cells["TipoOrigen"].Value.ToString();
+                        tipoOrigen = dgvEditar.CurrentRow.Cells["TipoOrigen"].Value.ToString();
                     }
 
                     string id = Id.Text;
@@ -213,11 +217,11 @@ namespace RedAitana_Integradora
                 }
 
                 // Elimina la fila seleccionada del grid
-                foreach (DataGridViewRow fila in dataGridView1.Rows)
+                foreach (DataGridViewRow fila in dgvEditar.Rows)
                 {
                     if (fila.Cells["id"].Value.ToString() == Id.Text)
                     {
-                        dataGridView1.Rows.Remove(fila);
+                        dgvEditar.Rows.Remove(fila);
                         break;
                     }
                 }
@@ -239,9 +243,11 @@ namespace RedAitana_Integradora
             Correo.Clear();
             Telefono.Clear();
             PicFoto.Image = null;
+
+            this.Close(); // Cierra el formulario actual
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+        private void dgvEditar_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
 
         // =====================
         // EVENTO: Carga inicial del formulario y llenado del DataGridView
@@ -253,24 +259,52 @@ namespace RedAitana_Integradora
             {
                 conexion.AbrirConexion();
 
-                string query = @"
-                SELECT IdPersonal AS id, Tipo AS Rol, 
-                CONCAT(PrimerNombre, ' ', SegundoNombre) AS Nombres, 
-                CONCAT(PrimerApellido, ' ', SegundoApellido) AS Apellidos,
-                Correo, Telefono,
-                'Personal' AS TipoOrigen
-                FROM personal 
-                INNER JOIN rol ON personal.IdRol = rol.Id 
+                string query = "";
+                switch (tipo)
+                {
+                    case 1:
+                        query = @"
+                            SELECT IdPersonal AS id, Tipo AS Rol, 
+                            CONCAT(PrimerNombre, ' ', SegundoNombre) AS Nombres, 
+                            CONCAT(PrimerApellido, ' ', SegundoApellido) AS Apellidos,
+                            Correo, Telefono,
+                            'Personal' AS TipoOrigen
+                            FROM personal 
+                            INNER JOIN rol ON personal.IdRol = rol.Id 
 
-                UNION 
+                            UNION 
 
-                SELECT IdPersonalExtra AS id, Tipo AS Rol, 
-                   CONCAT(PrimerNombre, ' ', SegundoNombre) AS Nombres, 
-                   CONCAT(PrimerApellido, ' ', SegundoApellido) AS Apellidos,
-                   '' AS Correo, '' AS Telefono,
-                   'PersonalExtra' AS TipoOrigen
-                FROM personalextra 
-                INNER JOIN rol ON personalextra.IdRol = rol.Id;";
+                            SELECT IdPersonalExtra AS id, Tipo AS Rol, 
+                               CONCAT(PrimerNombre, ' ', SegundoNombre) AS Nombres, 
+                               CONCAT(PrimerApellido, ' ', SegundoApellido) AS Apellidos,
+                               '' AS Correo, '' AS Telefono,
+                               'PersonalExtra' AS TipoOrigen
+                            FROM personalextra 
+                            INNER JOIN rol ON personalextra.IdRol = rol.Id;";
+                        break;
+
+                    case 2:
+                        query = @"
+                            SELECT IdPersonal AS id, Tipo AS Rol, 
+                            CONCAT(PrimerNombre, ' ', SegundoNombre) AS Nombres, 
+                            CONCAT(PrimerApellido, ' ', SegundoApellido) AS Apellidos,
+                            Correo, Telefono,
+                            'Personal' AS TipoOrigen
+                            FROM personal 
+                            INNER JOIN rol ON personal.IdRol = rol.Id;";
+                        break;
+
+                    case 3:
+                        query =  @"
+                        SELECT IdPersonalExtra AS id, Tipo AS Rol,
+                               CONCAT(PrimerNombre, ' ', SegundoNombre) AS Nombres,
+                               CONCAT(PrimerApellido, ' ', SegundoApellido) AS Apellidos,
+                               '' AS Correo, '' AS Telefono,
+                               'PersonalExtra' AS TipoOrigen
+                            FROM personalextra
+                            INNER JOIN rol ON personalextra.IdRol = rol.Id; ";
+                        break;
+                }
 
                 MySqlCommand Puente = new MySqlCommand(query, conexion.conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(Puente);
@@ -279,10 +313,10 @@ namespace RedAitana_Integradora
                 adaptador.Fill(tabla);
 
                 vistaFiltrada = new DataView(tabla);
-                dataGridView1.DataSource = vistaFiltrada;
-                dataGridView1.Columns["TipoOrigen"].Visible = false;
+                dgvEditar.DataSource = vistaFiltrada;
+                dgvEditar.Columns["TipoOrigen"].Visible = false;
 
-                foreach (DataGridViewColumn columna in dataGridView1.Columns)
+                foreach (DataGridViewColumn columna in dgvEditar.Columns)
                 {
                     columna.ReadOnly = true; // Solo lectura
                 }
@@ -295,17 +329,20 @@ namespace RedAitana_Integradora
         // EVENTO: Al cambiar selección en el DataGridView, llenar los campos del formulario
         // =====================
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        private void dgvEditar_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentRow == null) return;
+            if (dgvEditar.CurrentRow == null) return;
 
-            DataGridViewRow fila = dataGridView1.CurrentRow;
+            DataGridViewRow fila = dgvEditar.CurrentRow;
             Id.Text = fila.Cells["id"].Value.ToString();
             Rol.Text = fila.Cells["Rol"].Value.ToString();
             Nombre.Text = fila.Cells["Nombres"].Value.ToString();
             Apellidos.Text = fila.Cells["Apellidos"].Value?.ToString().Trim();
-            Correo.Text = fila.Cells["Correo"]?.Value?.ToString();
-            Telefono.Text = fila.Cells["Telefono"]?.Value?.ToString();
+            if (tipo == 1 || tipo == 2)
+            {
+                Correo.Text = fila.Cells["Correo"]?.Value?.ToString();
+                Telefono.Text = fila.Cells["Telefono"]?.Value?.ToString();
+            }
 
             string tipoOrigen = fila.Cells["TipoOrigen"].Value.ToString();
 

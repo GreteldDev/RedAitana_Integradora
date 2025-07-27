@@ -6,51 +6,49 @@ namespace RedAitana_Integradora
         {
             InitializeComponent();
 
+            // Puedes usar esto si decides controlar el tipo desde el combo
             comboBox1.Items.Add("Administrador");
             comboBox1.Items.Add("Usuario");
-
+            comboBox1.SelectedIndex = -1;
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e) //boton iniciar sesion
+        private void InicioSesion_Load(object sender, EventArgs e)
         {
-            string usuarioSeleccionado = comboBox1.SelectedItem?.ToString(); // ? previene error si no selecciona nada
-            string contrasenia = txtContrasenia.Text;
+            txtPassword.Focus();
+        }
 
-            if (usuarioSeleccionado == "Administrador" && contrasenia == "admin")
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            string passwordIngresada = txtPassword.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(passwordIngresada))
             {
-                MessageBox.Show("Bienvenido, administrador", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
-                var bienvenido = new Bienvenido(); //Abrir ventana del menu principal
-                bienvenido.Show(); // Mostrar la ventana del menú principal
-                this.Hide(); // Ocultar la ventana de inicio de sesión
+                MessageBox.Show("Ingrese la contraseña.");
+                return;
             }
-            else if (usuarioSeleccionado == "Usuario" && contrasenia == "user")
+
+            if (ValidarCredencial.IniciarSesion(passwordIngresada))
             {
-                MessageBox.Show("Bienvenido, usuario", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                var bienvenido = new Bienvenido();
-                bienvenido.Show(); // Mostrar la ventana del menú principal
-                this.Hide();
+                MessageBox.Show($"Bienvenido {ValidarCredencial.TipoUsuario}");
+
+                var ventanaBienvenido = new Bienvenido(); // instancia tu formulario de bienvenida
+                ventanaBienvenido.Show();
+                this.Hide(); 
             }
             else
             {
-                MessageBox.Show("Esta contraseña ya esta usada por el usuario +Cristian123+", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Credenciales incorrectas.");
             }
-           
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close(); // Cierra la ventana de login
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void label1_Click(object sender, EventArgs e) { }
 
-        }
-
-        private void txtContrasenia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void txtPassword_TextChanged(object sender, EventArgs e) { }
     }
 }
+

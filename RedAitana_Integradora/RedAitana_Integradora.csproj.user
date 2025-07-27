@@ -7,7 +7,7 @@
     <Compile Update="EditarGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GestionEmpleados.cs">
+    <Compile Update="GestionTrabajadores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GestionVoluntarios.cs">
@@ -19,7 +19,7 @@
     <Compile Update="Bienvenido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NuevoEmpleado.cs">
+    <Compile Update="NuevoTrabajador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NuevoVoluntario.cs">
@@ -28,7 +28,7 @@
     <Compile Update="RegistroGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="VisitaGeneral.cs">
+    <Compile Update="VentanaConfirmacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="VisitaPorSeleccion.cs">

@@ -30,92 +30,109 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroGeneral));
             label1 = new Label();
-            button5 = new Button();
-            dataGridView1 = new DataGridView();
+            btnSeleccionar = new Button();
+            dgvGeneral = new DataGridView();
             pictureBox1 = new PictureBox();
             btnEditar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label4 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvGeneral).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(15, 28);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(71, 48, 120);
+            label1.Location = new Point(36, 31);
             label1.Name = "label1";
-            label1.Size = new Size(321, 45);
+            label1.Size = new Size(292, 37);
             label1.TabIndex = 4;
             label1.Text = "Registros Recientes";
             // 
-            // button5
+            // btnSeleccionar
             // 
-            button5.BackColor = Color.FromArgb(177, 135, 193);
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(29, 168);
-            button5.Margin = new Padding(4);
-            button5.Name = "button5";
-            button5.Size = new Size(271, 45);
-            button5.TabIndex = 5;
-            button5.Text = "Visita por selección";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            btnSeleccionar.BackColor = Color.FromArgb(177, 135, 193);
+            btnSeleccionar.FlatAppearance.BorderSize = 0;
+            btnSeleccionar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnSeleccionar.FlatStyle = FlatStyle.Flat;
+            btnSeleccionar.Font = new Font("Century Gothic", 9F);
+            btnSeleccionar.ForeColor = Color.White;
+            btnSeleccionar.Location = new Point(23, 134);
+            btnSeleccionar.Name = "btnSeleccionar";
+            btnSeleccionar.Size = new Size(217, 36);
+            btnSeleccionar.TabIndex = 5;
+            btnSeleccionar.Text = "Visita por selección";
+            btnSeleccionar.UseVisualStyleBackColor = false;
+            btnSeleccionar.Click += btnSeleccionar_Click;
             // 
-            // dataGridView1
+            // dgvGeneral
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 238);
-            dataGridView1.Margin = new Padding(4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(711, 291);
-            dataGridView1.TabIndex = 7;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dgvGeneral.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvGeneral.BackgroundColor = Color.FromArgb(224, 200, 232);
+            dgvGeneral.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvGeneral.GridColor = Color.FromArgb(177, 135, 193);
+            dgvGeneral.Location = new Point(23, 190);
+            dgvGeneral.Name = "dgvGeneral";
+            dgvGeneral.RowHeadersWidth = 51;
+            dgvGeneral.Size = new Size(569, 233);
+            dgvGeneral.TabIndex = 7;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(615, 11);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(699, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(105, 74);
+            pictureBox1.Size = new Size(84, 59);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(329, 168);
+            btnEditar.BackColor = Color.FromArgb(177, 135, 193);
+            btnEditar.FlatAppearance.BorderSize = 0;
+            btnEditar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnEditar.FlatStyle = FlatStyle.Flat;
+            btnEditar.Font = new Font("Century Gothic", 9F);
+            btnEditar.ForeColor = Color.White;
+            btnEditar.Location = new Point(263, 134);
+            btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(132, 45);
+            btnEditar.Size = new Size(106, 36);
             btnEditar.TabIndex = 11;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(12, 74);
+            label4.Name = "label4";
+            label4.Size = new Size(771, 20);
+            label4.TabIndex = 19;
+            label4.Text = "_______________________________________________________________________________________________________________________________";
             // 
             // RegistroGeneral
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(800, 450);
+            Controls.Add(label4);
             Controls.Add(btnEditar);
             Controls.Add(pictureBox1);
-            Controls.Add(dataGridView1);
-            Controls.Add(button5);
+            Controls.Add(dgvGeneral);
+            Controls.Add(btnSeleccionar);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "RegistroGeneral";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form3";
+            Text = "RegistroGeneral";
             Load += Form3_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvGeneral).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -123,9 +140,10 @@
 
         #endregion
         private Label label1;
-        private Button button5;
-        private DataGridView dataGridView1;
+        private Button btnSeleccionar;
+        private DataGridView dgvGeneral;
         private PictureBox pictureBox1;
         private Button btnEditar;
+        private Label label4;
     }
 }

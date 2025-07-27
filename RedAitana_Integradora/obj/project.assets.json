@@ -1554,11 +1554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\RedAitana_Integradora.csproj",
+      "projectUniqueName": "C:\\Users\\Duvan\\Documents\\Tareukis\\3er Cuatri\\Proyecto Integrador 1\\RedAitana_Integradora\\RedAitana_Integradora\\RedAitana_Integradora.csproj",
       "projectName": "RedAitana_Integradora",
-      "projectPath": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\RedAitana_Integradora.csproj",
+      "projectPath": "C:\\Users\\Duvan\\Documents\\Tareukis\\3er Cuatri\\Proyecto Integrador 1\\RedAitana_Integradora\\RedAitana_Integradora\\RedAitana_Integradora.csproj",
       "packagesPath": "C:\\Users\\Duvan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Duvan\\source\\repos\\RedAitana_Integradora\\RedAitana_Integradora\\obj\\",
+      "outputPath": "C:\\Users\\Duvan\\Documents\\Tareukis\\3er Cuatri\\Proyecto Integrador 1\\RedAitana_Integradora\\RedAitana_Integradora\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
